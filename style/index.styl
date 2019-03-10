@@ -1,0 +1,82 @@
+html, body
+	width 100%
+	height 100%
+	margin 0
+
+a
+	color white
+	&:before
+		content " *"
+		opacity 0.5
+
+body
+	display flex
+	align-items center
+	justify-content center
+	flex-direction column
+	background #1c1c1c
+
+.page
+	width 100%
+	max-width 600px
+	color white
+	font-family monospace
+	padding 20px
+	font-size 120%
+
+	.command
+		padding 10px 0
+
+	.logo
+		font-family "Roboto Slab"
+		font-size 400%
+		padding 10px 0
+		padding-bottom 20px
+
+	.about
+		padding 20px 0
+
+	.sf
+		opacity 0.2
+
+	.keyvalue
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+		.key
+			font-weight bold
+			opacity 0.7
+			padding 4px 0
+			display inline-block
+			padding-right 10px
+			color white
+
+		.value
+			display inline-block
+			padding-right 10px
+			opacity 0.9
+			&.multiline
+				display block
+
+			&:not(.multiline)
+				white-space nowrap
+				text-overflow ellipsis
+
+			.item
+				padding-left 10px
+				display inline-block
+			.tag
+				font-size 80%
+				color white
+				display inline-block
+				padding 0 2px
+				margin 0 2px
+				&:nth-child(1)
+					background #5f8700
+				&:nth-child(2)
+					background #0087ff
+				&:nth-child(3)
+					background #d75f00
+			.text
+				display inline
+

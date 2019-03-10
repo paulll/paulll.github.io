@@ -1,0 +1,4 @@
+#!/bin/bash
+stylus --compress --watch --out site/style style &
+pug --watch --out site pubs
+

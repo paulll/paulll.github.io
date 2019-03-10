@@ -1,0 +1,49 @@
+html
+	head
+		title paulll
+		meta(charset="utf-8")
+		link(rel="stylesheet" href="style/index.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab")
+	body
+		.page
+			.command $ whoami
+			.response
+				.logo paulll
+				.about -- Программист, хакер, IT-специалист.
+				.keyvalue
+					.key Социальное:
+					.value.multiline
+						a.ptr.item(href="https://github.com/paulll") github
+						a.ptr.item(href="tg://resolve?domain=pauljs2") telegram
+						a.ptr.item(href="https://keybase.io/paulll") keybase
+				.keyvalue
+					.key Языки программирования:
+					.value.multiline
+						.item - javascript
+						.item - brainfuck
+						.item - c++
+						.item - python
+						.item - lua
+						.item - kotlin
+						.item - java
+				.keyvalue.sf [1]    11200 segmentation fault (core dumped)  whoami
+			.command $ ls -lh projects
+			.response
+				.keyvalue
+					a.key(href="projects/graphite.graph") graphite.graph
+					.value
+						.tag js
+						.tag vk
+						.tag gui
+						.text - утилита для анализа социального графа вконтакте
+				.keyvalue
+					a.key(href="projects/graphite.groups-intersect") graphite.groups-intersect
+					.value
+						.tag js
+						.tag vk
+						.tag cli
+						.text - поиск альтернативных и похожих страниц вконтакте
+				.keyvalue
+					a.key(href="https://github.com/paulll/vk-profile-photo-fetch") vk-profile-photo-fetch
+					.value
+			.command $ ls -lh
