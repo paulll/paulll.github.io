@@ -14,5 +14,6 @@ deploy:
   keep-history: true 
   target-branch: master
   local-dir: site
+  fqdn: paulll.cc
   on:
     branch: src
