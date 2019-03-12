@@ -1,4 +1,7 @@
 #!/bin/bash
+cp -rv assets site # does not watch for changes
+mkdir -p site/style
 stylus --compress --watch --out site/style style &
-pug --watch --out site pubs
+pug --watch --out site views
+
 
