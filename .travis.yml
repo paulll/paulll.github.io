@@ -7,7 +7,7 @@ before_script:
 script: 
   - stylus --compress --out site/style style
   - pug --out site views
-  - cp -r assets site
+  - cp -r assets/* site
 deploy:
   provider: pages
   skip-cleanup: true
