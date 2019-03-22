@@ -4,5 +4,7 @@ rm -rf site
 mkdir -p site/style
 `pwd`/bin/lndir `pwd`/assets `pwd`/site
 
+yaml2json projects.yml > site/projects.yml
+
 stylus --compress --watch --out site/style style &
-pug --watch --out site views
+pug -O site/projects.yml --watch --out site views

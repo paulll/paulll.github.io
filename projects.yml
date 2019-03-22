@@ -1,0 +1,10 @@
+projects:
+  - name: graphite.graph
+    href: projects/graphite.graph
+    tags: [js, vk, gui]
+    desc: утилита для анализа социального графа вконтакте
+
+  - name: graphite.groups-intersect
+    href: projects/graphite.groups-intersect
+    tags: [js, vk, cli]
+    desc: поиск альтернативных и похожих страниц вконтакте

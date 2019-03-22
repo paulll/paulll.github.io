@@ -32,15 +32,12 @@ html
 				.keyvalue.sf [1]    11200 segmentation fault (core dumped)  whoami
 			.command $ ls -lh projects
 			.response
-				.project
-					.left
-						a.title(href="projects/graphite.graph") graphite.graph
-						.tags js vk gui
-					.right
-						.description утилита для анализа социального графа вконтакте
-				.project
-					.left
-						a.title(href="projects/graphite.groups-intersect") graphite.groups-intersect
-						.tags js vk cli
-					.right
-						.description поиск альтернативных и похожих страниц вконтакте
+				for project in projects
+					.project
+						.left
+							a.title(href=project.href)= project.name
+							.tags
+								for tag in project.tags
+									span.tag= tag
+						.right
+							.description= project.desc

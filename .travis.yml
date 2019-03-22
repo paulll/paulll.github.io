@@ -2,11 +2,12 @@ language: node_js
 node_js:
   - "node"
 before_script:
-  - npm install -g stylus pug-cli
+  - npm install -g stylus pug-cli yamljs
   - mkdir -p site/style
 script: 
   - stylus --compress --out site/style style
-  - pug --out site views
+  - yaml2json projects.yml > site/projects.yml
+  - pug -O site/projects.yml --out site views
   - cp -r assets/* site
 deploy:
   provider: pages
