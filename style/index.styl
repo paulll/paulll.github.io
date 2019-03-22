@@ -5,8 +5,11 @@ html, body
 
 a
 	color white
+	text-decoration none
+	&:hover
+		text-decoration underline
 	&:before
-		content " *"
+		content "*"
 		opacity 0.5
 
 body
@@ -26,7 +29,7 @@ body
 
 .page
 	width 100%
-	max-width 600px
+	max-width 900px
 	color white
 	font-family monospace
 	padding 20px
@@ -45,7 +48,7 @@ body
 		padding 20px 0
 
 	.sf
-		opacity 0.2
+		opacity 0.05
 
 	.keyvalue
 		white-space nowrap
@@ -73,18 +76,23 @@ body
 			.item
 				padding-left 10px
 
-			.tag
-				font-size 80%
-				color white
-				display inline-block
-				padding 0 2px
-				margin 0 2px
-				&:nth-child(1)
-					background #5f8700
-				&:nth-child(2)
-					background #0087ff
-				&:nth-child(3)
-					background #d75f00
 			.text
 				display inline
 
+	.project
+		display flex
+		padding 5px 10px
+		color #cccccc
+		.left
+			width 300px
+			display flex
+			flex-direction column
+			.title
+				color #999
+				font-weight bold
+			.tags
+				padding 0 10px
+				font-family monospace
+				font-size 80%
+		.right
+			color inherit
