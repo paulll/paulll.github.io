@@ -1,10 +1,30 @@
 projects:
   - name: graphite.graph
-    href: projects/graphite.graph
+    desc: Анализ социального графа Вконтакте
     tags: [js, vk, gui]
-    desc: утилита для анализа социального графа вконтакте
+    href: https://github.com/paulll/graphite
 
   - name: graphite.groups-intersect
+    desc: Поиск альтернативных или похожих страниц Вконтакте
+    tags: [js, vk]
     href: projects/graphite.groups-intersect
-    tags: [js, vk, cli]
-    desc: поиск альтернативных и похожих страниц вконтакте
+
+  - name: tdbot
+    desc: Высокоуровневая обертка над TDlib
+    tags: [js, tg]
+    href: https://github.com/paulll/tdbot/tree/master
+
+  - name: tdbot-persistent
+    desc: Обертка над TDlib с сохранением состояний
+    tags: [js, tg, redis]
+    href: https://github.com/paulll/tdbot
+
+  - name: vk-profile-photo-fetch
+    desc: Получение ссылок на аватарки всех пользователей Вконтакте
+    tags: [js, vk, distributed, /for/]
+    href: https://github.com/paulll/vk-profile-photo-fetch
+
+  - name: imap-attachments
+    desc: Скачивание вложений с почтовых аккаунтов за указанный период
+    tags: [js, imap, /for/]
+    href: https://github.com/paulll/imap-attacments
