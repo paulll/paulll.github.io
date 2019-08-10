@@ -4,10 +4,35 @@ projects:
     tags: [js, vk, gui]
     href: https://github.com/paulll/graphite
 
-  - name: graphite.groups-intersect
-    desc: Поиск альтернативных или похожих страниц Вконтакте
+  - name: vk-tools
+    desc: Анализ участников групп Вконтакте
+    tags: [js, vk, cli]
+    href: https://github.com/paulll/vk-tools
+
+  - name: vk-api
+    desc: Библиотека API Вконтакте
     tags: [js, vk]
-    href: projects/graphite.groups-intersect
+    href: https://github.com/paulll/vklib
+
+  - name: siso
+    desc: Фреймворк для анализаторов
+    tags: [js, ts]
+    href: https://github.com/paulll/siso
+
+  - name: chandj
+    desc: Telegram-бот для организации фонотеки
+    tags: [js, tg, docker]
+    href: https://github.com/paulll/chandj
+
+  - name: vk-profile-photo-fetch
+    desc: Получение ссылок на аватарки всех пользователей Вконтакте
+    tags: [js, vk, distributed, /for/]
+    href: https://github.com/paulll/vk-profile-photo-fetch
+
+  - name: imap-attachments
+    desc: Скачивание вложений с почтовых аккаунтов за указанный период
+    tags: [js, imap, /for/]
+    href: https://github.com/paulll/imap-attacments
 
   - name: tdbot
     desc: Высокоуровневая обертка над TDlib
@@ -19,12 +44,3 @@ projects:
     tags: [js, tg, redis]
     href: https://github.com/paulll/tdbot
 
-  - name: vk-profile-photo-fetch
-    desc: Получение ссылок на аватарки всех пользователей Вконтакте
-    tags: [js, vk, distributed, /for/]
-    href: https://github.com/paulll/vk-profile-photo-fetch
-
-  - name: imap-attachments
-    desc: Скачивание вложений с почтовых аккаунтов за указанный период
-    tags: [js, imap, /for/]
-    href: https://github.com/paulll/imap-attacments
