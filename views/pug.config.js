@@ -1,5 +1,6 @@
 module.exports = {
 	locals: {
+		projectsByCategory: require('../project-data.json'),
 		projects_by_tag: {
 			'vk.com related': [
 				'graphite',

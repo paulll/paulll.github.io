@@ -4,7 +4,7 @@
   "description": "what's behind the https://paulll.cc",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && parcel build views/* --public-url ."
+    "build": "rm -rf dist .cache && node build.js && parcel build views/* --public-url ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "devDependencies": {
     "pug": "^2.0.4",
     "stylus": "^0.54.7"
+  },
+  "dependencies": {
+    "yaml": "^1.9.2"
   }
 }
