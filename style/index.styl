@@ -1,17 +1,21 @@
 html, body
 	padding 0
 	margin 0
-	font-family 'Dejavu Sans Mono', 'Consolas', monospace
+	font-family 'DejaVu Sans Mono', 'Consolas', monospace
 	background #1c1c1c
 	color whitesmoke
 	line-height 1.6
 	font-size 0.9rem
 	
+@font-face {
+	src: url('DejaVuSansMono.ttf')
+	font-family: 'DejaVu Sans Mono'
+}
+	
 
 @media screen and (min-width:801px)
 	html, body
 		font-size 1.1rem
-
 
 body 
 	display flex
@@ -19,6 +23,8 @@ body
 
 h1 
 	font-size 5em
+	font-family 'Roboto Slab'
+	font-weight 400
 
 span
 	display inline
