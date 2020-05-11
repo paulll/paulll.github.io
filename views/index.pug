@@ -1,43 +1,38 @@
-html
+doctype html
+html(lang="ru")
 	head
+		meta(charset="utf8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(rel="stylesheet" href="../style/index.styl")
+		script(defer="defer" src="../src/index.js")
+		//link(rel="icon" type="image/svg" href="../style/favicon.png")
 		title paulll
-		meta(charset="utf-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1")
-		link(rel="stylesheet" href="style/index.css")
-		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab")
-		script(src="js/index.js")
 	body
-		canvas#background
-		.page#first-page
-			.command $ whoami
-			.response
-				.logo paulll
-				.about -- Программист, хакер, IT-специалист.
-				.keyvalue
-					.key Социальное:
-					.value.multiline
-						a.ptr.item(href="https://github.com/paulll") github
-						a.ptr.item(href="tg://resolve?domain=pauljs2") telegram
-						a.ptr.item(href="https://keybase.io/paulll") keybase
-				.keyvalue
-					.key Языки программирования:
-					.value.multiline
-						.item - javascript
-						.item - brainfuck
-						.item - c++
-						.item - python
-						.item - lua
-						.item - kotlin
-						.item - java
-				.keyvalue.sf [1]    11200 segmentation fault (core dumped)  whoami
-			.command $ ls -lh projects
-			.response
-				for project in projects
-					.project
-						.left
-							a.title(href=project.href)= project.name
-							.tags
-								for tag in project.tags
-									span.tag= tag
-						.right
-							.description= project.desc
+		.content
+			.block 
+				h1 paulll
+			.block
+				h2 Hello, world!
+				p 
+					.line I am a full stack <span><s>junior</s> suffering from impostor syndrome</span> developer, doing things since ~11yo.
+					.line Check out my awesome projects below
+					.line And feel free to contact me on <a href="tg://resolve?domain=pauljs2">telegram</a>
+			.block
+				h2 Most recent things
+				.things
+					.line <b>Yajla</b> — Yet Another Japanese Learing App
+					.line <b>@iqdbsearchbot</b> — Telegram bot to search by images
+					.line <b>graphite</b> — Social graph analysis platform
+					.lime <b>siso</b> — Automated decomposition and solution of some CTF-like tasks
+					//.line <b>@chandjbot</b> — Telegram bot to organize your music library
+					.line <b>ESF</b> — Evil Signup Form, just give it a try :D
+					.line <b>rust-inverted-index</b> — Simple embedded inverted index database
+			.block
+				h2 By category
+				.projects
+					each projects, tag in projects_by_tag
+						.tag 
+							h3= tag
+							ul
+								each project in projects
+									li= project		

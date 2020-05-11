@@ -1,0 +1,23 @@
+{
+  "name": "paulll.github.io",
+  "version": "1.0.0",
+  "description": "what's behind the https://paulll.cc",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && parcel build views/* --public-url ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulll/paulll.github.io.git"
+  },
+  "author": "paulll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulll/paulll.github.io/issues"
+  },
+  "homepage": "https://github.com/paulll/paulll.github.io#readme",
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "stylus": "^0.54.7"
+  }
+}
