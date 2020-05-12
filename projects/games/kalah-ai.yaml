@@ -1,0 +1,18 @@
+deployment: null
+source: https://box.paulll.cc/s/projects/for/jon/kalah.py
+license: MIT
+technologies: [python, numpy]
+tags: [done, requested]
+awesomeness: 30
+i18n:
+  ru:
+    name: kalah-ai
+    short: ИИ для игры в Калах
+    description: >
+      Проект по запросу. Консольная игра в Калах против компьютера
+      с ИИ на основе алгоритма NegaScout.
+  en:
+    name: kalah-ai
+    short: Kalah game AI
+    description: >
+      Console Kalah game against computer AI based on NegaScout algorithm

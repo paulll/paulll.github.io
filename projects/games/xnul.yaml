@@ -1,0 +1,26 @@
+deployment: https://box.paulll.cc/s/projects/xnul/
+source: null
+license: MIT 
+technologies: [js, less]
+tags: [done]
+awesomeness: 25
+i18n:
+  ru:
+    name: xnul
+    short: Необычные крестики-нолики
+    description: >
+      Эксперимент с тем, что выйдет, если в крестиках-ноликах (5-в-ряд)
+      было бы 3 игрока. Довольно просто "выйграть" за свою сторону, но
+      вот квест: как, к примеру, сделать чтобы именно красные построили 5 в ряд?
+
+      Кстати, фоновая картинка генерируется каждый раз случайно. 
+  en:
+    name: xnul
+    short: Weird tic-tac-toe
+    description: >
+      Experiment with five-in-a-row game. What happens if there are 3 players?
+      Quite easy to win with the default rules, so here is the quest: 
+      how to make the reds build 5 in a row?
+
+      By the way, background image is randomly generated each time you open the game. 
+      

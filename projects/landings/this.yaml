@@ -1,0 +1,25 @@
+deployment: https://paulll.cc
+source: https://github.com/paulll/paulll.github.io
+license: MIT
+technologies: [js, parcel, stylus, pug, yaml, travis, github pages, git]
+tags: []
+awesomeness: 500
+i18n:
+  ru:
+    name: Этот сайт (рекурсия)
+    description: >
+      У меня довольно много проектов, так что пришлось придумывать что-то для удобного обзора этой коллекции.
+      Просто гитхаб или что-то такое не подходит: нет категоризации, да и список довольно долго скроллится.
+      Такое удобно для фокусировке на активных проектах, но это не тот кейс. 
+
+      Это не столько портфолио, сколько средство не теряться в собственных разработках, так что в списках присутствуют 
+      приватные или незавершенные проекты
+  en:
+    name: This (recursion)
+    description: >
+      I have quite a lot of projects, so I had to come up with something for a convenient overview of this collection.
+      Just github or something like that doesn't fit: there is no categorization, and scrolling it takes much time.
+      This is convenient for focusing on active projects, but this is not the case.
+
+      This is not so much a portfolio as a means of not getting lost in your own developments, so the lists here include
+      private or incomplete projects

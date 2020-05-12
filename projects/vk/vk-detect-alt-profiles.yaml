@@ -1,0 +1,36 @@
+deployment: null
+source: https://github.com/paulll/vk-utils
+license: MIT
+technologies: [node, redis, ardb, vk.com api]
+tags: [done]
+awesomeness: 300
+i18n:
+  ru:
+    name: Деанонимайзер
+    short: Поиск оригинала по фейку и наоборот
+    description: >
+      Выдает каким-либо образом тесно связанные страницы людей,
+      в особенности альтернативные страницы (фейки). Оказалась 
+      <b>на удивление</b> эффективной, даже при использовании 
+      одного лишь графа групп вконтакте, даже неполного. 
+      Действительно, направо и налево деанонит. То ли прога 
+      умная, то ли люди не особо парились.
+
+      Эту штуку можно использовать с ноутбука с мобильным 
+      интернетом без особых проблем. Конечно это все круто,
+      но будет так себе, если этим начнут пользоваться
+      недобросовестные люди. 
+  en:
+    name: Deanonymizer
+    short: Get real page from fake
+    description: >
+      Displays closely related pages of people in any way,
+      in particular, alternative pages (fakes). Turn out
+      <b>surprisingly </b> effective, even when used
+      only one column of Vkontakte groups, even incomplete.
+      Don't know was the program so smart, or people didn't really care.
+
+      This thing can be used from a laptop with a mobile phone
+      the internet without any problems. Questionable thing,
+      however.
+      

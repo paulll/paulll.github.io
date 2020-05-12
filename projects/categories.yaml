@@ -1,0 +1,55 @@
+categories:
+  - path: vk
+    i18n:
+      ru: Вконтакте
+      en: Vkontakte
+  
+  - path: telegram
+    i18n: 
+      ru: Телеграм
+      en: Telegram
+
+  - path: frontend-experiments
+    i18n:
+      ru: Фронтэнд-эксперименты
+      en: Frontend experiments
+
+  - path: games
+    i18n:
+      ru: Игры
+      en: Gamedev
+
+  - path: security
+    i18n:
+      ru: CTF и ИБ
+      en: CTFs & Security
+
+  - path: landings
+    i18n: 
+      ru: Отстойные Лэндинги
+      en: Shitty Landings   
+
+  - path: web-apps
+    i18n:
+      ru: Веб-Приложения
+      en: Web Applications
+
+  - path: cli-utils
+    i18n: 
+      ru: Консольные Утилиты
+      en: CLI Utilities         
+
+  - path: libraries
+    i18n:
+      ru: Библиотеки
+      en: Libraries
+
+  - path: data-science
+    i18n:
+      ru: Дата-Саенс
+      en: Data Science        
+
+  - path: other
+    i18n:
+      ru: Прочее
+      en: Other

@@ -1,0 +1,19 @@
+deployment: null
+source: null
+license: private
+technologies: [js, pug, stylus, vk.com api]
+tags: [private, done, to-publish]
+awesomeness: 10
+i18n:
+  ru:
+    name: Обзор конфы
+    short: Рендер содержимого конфы в красивый html
+    description: >
+      Штука что отображала последние сообщения конфы вконтакте, при том мимикрируя под
+      стиль веб-версии телеграма. Была нужна для мониторинга конф по access_token, 
+      в общем там целая длинная история..
+  en:
+    name: Chat view
+    short: Render vk.com chats in beautiful html
+    description: >
+      That thing just displays messages from vk.com chat with telegram-like ui.  

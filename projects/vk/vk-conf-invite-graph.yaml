@@ -1,0 +1,17 @@
+deployment: null
+source: https://box.paulll.cc/s/projects/temp/confgraph/
+license: MIT
+technologies: [js]
+tags: [done, requested]
+awesomeness: 10
+i18n:
+  ru:
+    name: Граф приглашений чата
+    short: Граф приглашений в чате вконтакте
+    description: >
+      
+  en:
+    name: Chat invite graph
+    short: Graph who added whom in vk.com chat
+    description: >
+      

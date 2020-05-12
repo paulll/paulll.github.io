@@ -1,0 +1,19 @@
+deployment: null
+source: https://git.paulll.cc/paulll/infosource
+license: MIT
+technologies: [js, stylus, pug, node, vk.com api]
+tags: [done, requested]
+awesomeness: 10
+i18n:
+  ru:
+    name: infosource
+    short: Граф распространения новостей вконтакте
+    description: >
+      Набор утилит для получения и анализа графа новостей вконтакте. 
+      Типа, кто кого репостил, кто кого копировал.
+  en:
+    name: infosource
+    short: Vk.com information distribution graph
+    description: >
+      A set of utilities for getting and analyzing the vk.com news graph.
+      Like who reposted, who copied.

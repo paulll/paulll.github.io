@@ -1,0 +1,18 @@
+deployment: https://box.paulll.cc/s/vocabulary-game/dist/
+source: https://git.paulll.cc/paulll/vocabulary-game
+license: MIT
+technologies: [parcel, pug, stylus, js]
+tags: [done, requested]
+awesomeness: 15
+i18n:
+  ru:
+    name: vocabulary-game
+    short: Игра для запоминания слов
+    description: >
+      Простенькая игра на запоминание слов
+  en:
+    name: vocabulary-game
+    short: Game to memorizing words
+    description: >
+      Simple game to memorize words
+      

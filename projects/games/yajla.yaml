@@ -1,0 +1,33 @@
+deployment: https://box.paulll.cc/s/yajla/
+source: https://github.com/paulll/yajla
+license: MIT
+technologies: [js, parcel, stylus, pug, git, trianglify]
+tags: [done]
+awesomeness: 500
+i18n:
+  ru:
+    name: Yajla
+    short: Приложение для запоминания японской каны
+    description: >
+      Минималистичное приложение для зубрежки каны (слоговой азбуке в японском). 
+      Автоматически подстраивает сложность и частоту появления разных символов,
+      учитывая всяческие малейшие факторы, так что вместо размышлений о том,
+      с чего бы начать, можно просто начать! 
+
+      Что творится у проги за кулисами можно почитать в репозитории, там же более
+      подробный и технический readme. 
+      
+      Кстати, у него красивая светлая тема, а по-умолчанию она тёмная как на этом сайте
+  en:
+    name: Yajla
+    short: Yet Another Japanese Learing App
+    description: >
+      A minimalistic application for memorizing kana (syllabic alphabet in Japanese).
+      It automatically adjusts the complexity and frequency of different characters,
+      taking into account all the smallest factors, so instead of thinking about
+      where to start, you can just start!
+
+      What is going on in the program behind the scenes can be read in the repository,
+      there is more detailed and technical readme.
+
+      By the way, it has a beautiful light theme, but by default it is dark as on this site

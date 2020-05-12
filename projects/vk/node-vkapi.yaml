@@ -1,0 +1,29 @@
+deployment: null
+source: https://github.com/paulll/node-vkapi
+license: MIT
+technologies: [typescript, jest, vk.com api]
+tags: [done, lib]
+awesomeness: 50
+i18n:
+  ru:
+    name: node vkapi
+    short: Быстрая и легковесная библиотека для работы с vk api
+    description: >
+      Использую в своих проектах. 
+
+      Имеет такие фишки как автоматическая умная группировка 
+      запросов в execute, приоритезация запросов, загрузка 
+      списков (это где поля items и count), троттлинг.
+      
+      Подробнее смотрите в README проекта.
+  en:
+    name: node vkapi
+    short: Fast vk api library 
+    description: >
+      I use it in my projects.
+
+      Has such features as automatic smart grouping
+      requests in <strong>execute</strong>, request prioritization, fetching
+      lists ({count, items} objects), trottling.
+
+      For more information, see the project's README.

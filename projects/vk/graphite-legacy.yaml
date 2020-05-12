@@ -1,0 +1,32 @@
+deployment: https://paulll.cc/graphite/main.html
+source: https://github.com/paulll/graphite
+license: MIT
+technologies: [js, pug, stylus, vk.com api, webgl, gulp]
+tags: [done, deprecated]
+awesomeness: 500
+i18n:
+  ru:
+    name: Graphite legacy
+    short: Утилита для анализа графа друзей вконтакте
+    description: >
+      Эттэншн! Устарело в пользу новой платформы graphite, так что больше не поддерживается.
+
+      Быстрое и мощное приложения для анализа графа друзей вконтакте. 
+      Может отображать огромные графы. За несколько кликов может используя только
+      данные графа друзей вконтакте вычислить, к примеру, всех студентов одного и 
+      того же вуза. Находит скрытых друзей.
+
+      Кстати, в репозитории лежит юзерскрипт, установка которого дает дополнительные
+      возможности для работы с графом.  
+  en:
+    name: Graphite legacy
+    short: Vk.com social graph analysis utility
+    description: >
+      Deprecated in favor of the new graphite platform. 
+
+      Can handle huge social graphs (thousands of nodes), detect communities.
+      Has such powerful abilities as to find hidden friends or find the entire
+      common community for given nodes.
+
+      You can use userscript in project repository to gain extra abilities.
+      
