@@ -13,13 +13,13 @@ html(lang="ru")
 			.block 
 				h1 paulll
 			.block
-				h2 Hello, world!
+				h2(data-ru="Привет, Мир!") Hello, world!
 				p 
 					.line I am a full stack <span><s>junior</s> suffering from impostor syndrome</span> developer, doing things since ~11yo.
 					.line Check out my awesome projects below
 					.line And feel free to contact me on <a href="tg://resolve?domain=pauljs2">telegram</a>
 			.block
-				h2 Most recent things
+				h2(data-ru="Последние проекты") Most recent things
 				.things
 					.line <b>Yajla</b> — Yet Another Japanese Learing App
 					.line <b>@iqdbsearchbot</b> — Telegram bot to search by images
@@ -29,11 +29,12 @@ html(lang="ru")
 					.line <b>ESF</b> — Evil Signup Form, just give it a try :D
 					.line <b>rust-inverted-index</b> — Simple embedded inverted index database
 			.block
-				h2 By category
+				h2(data-ru="Проeкты по категориям") By category
 				.projects
-					each projects, tag in projectsByCategory
+					each category in categories
 						.tag 
-							h3= tag
+							h3(data-ru=category.i18n.ru)= category.i18n.en
 							ul
-								each project in projects
-									li= project		
+								each project in category.projects
+									li
+										a(href="projects.pug#"+project.id data-ru=project.i18n.ru.name)= project.i18n.en.name
