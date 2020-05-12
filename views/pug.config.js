@@ -13,9 +13,9 @@ for (const category of categories) {
 		.map(x => yaml.parse(fs.readFileSync(path.join(__dirname, '../projects', category.path, x), {encoding: 'utf-8'})))
 		.sort((a,b) => (b.awesomeness||0) - (a.awesomeness||0));
 
-	projectsByCategory[category.i11n[hl]] = [];
+	projectsByCategory[category.i18n[hl]] = [];
 	for (const project of category.projects) {
-		projectsByCategory[category.i11n[hl]].push(project.i11n[hl].name) 
+		projectsByCategory[category.i18n[hl]].push(project.i11n[hl].name) 
 	}
 }
 
