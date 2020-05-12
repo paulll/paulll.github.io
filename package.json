@@ -2,7 +2,6 @@
   "name": "paulll.github.io",
   "version": "1.0.0",
   "description": "what's behind the https://paulll.cc",
-  "main": "index.js",
   "scripts": {
     "build": "rm -rf dist .parcel-cache && parcel build views/*"
   },
