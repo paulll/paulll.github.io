@@ -4,7 +4,7 @@
   "description": "what's behind the https://paulll.cc",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist .cache && node build.js && parcel build views/* --public-url ."
+    "build": "rm -rf dist .parcel-cache && parcel build views/*"
   },
   "repository": {
     "type": "git",
