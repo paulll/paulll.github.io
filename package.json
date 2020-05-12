@@ -21,6 +21,7 @@
     "stylus": "^0.54.7"
   },
   "dependencies": {
+    "parcel": "^2.0.0-alpha.3.2",
     "yaml": "^1.9.2"
   }
 }

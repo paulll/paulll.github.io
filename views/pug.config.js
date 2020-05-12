@@ -1,7 +1,31 @@
+//const categories = require('../projects/categories.yaml');
+//const projectFiles = require('../projects/**/*.yaml');
+
+const yaml = require('yaml');
+const fs = require('fs');
+const path = require('path');
+const {categories} = yaml.parse(fs.readFileSync(__dirname + '/../projects/categories.yaml', {encoding: 'utf-8'}));
+
+const hl = 'en';
+const projectsByCategory = {}
+for (const category of categories) {
+	category.projects = fs.readdirSync(path.join(__dirname, `../projects`, category.path))
+		.map(x => yaml.parse(fs.readFileSync(path.join(__dirname, '../projects', category.path, x), {encoding: 'utf-8'})))
+		.sort((a,b) => (b.awesomeness||0) - (a.awesomeness||0));
+
+	projectsByCategory[category.i11n[hl]] = [];
+	for (const project of category.projects) {
+		projectsByCategory[category.i11n[hl]].push(project.i11n[hl].name) 
+	}
+}
+
+console.log(projectsByCategory, categories)
+
+
 module.exports = {
 	locals: {
-		projectsByCategory: require('../project-data.json'),
-		projects_by_tag: {
+		projectsByCategory,
+		projectsByCategory_: {
 			'vk.com related': [
 				'graphite',
 				'node-vkapi',
