@@ -1,17 +1,20 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
+deployment: null
+source: null
+license: MIT
+technologies: [js, pug, stylus]
+tags: [done, to-publish]
 awesomeness: 0
 i18n:
   ru:
-    name: 
-    short: 
+    name: Активные проекты
+    short: Список проектов 
     description: >
-      
+      Список проектов. Интересна тем что отображала преемственность проектов,
+      типа что во что развилось.
   en:
-    name: 
-    short: 
+    name: Active projects
+    short: Project list 
     description: >
-      
+      Simple project list. 
+      Shows project history, like.. <code><b>Project list</b> => <b>this(paulll.cc)</b></code>,
+      but graphics way.
