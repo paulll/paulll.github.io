@@ -1,17 +1,29 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://paulll.cc/evil-signup-form
+source: https://github.com/paulll/evil-signup-form
+license: MIT
+technologies: [js, aws, serverless, stylus, pug, gulp, travis, github pages, postgresql]
+tags: [done]
+awesomeness: 200
 i18n:
   ru:
-    name: 
-    short: 
+    name: Плохая Форма Авторизации
+    short: И речь не о её качестве, ха-ха 
     description: >
-      
+      Умеет на лету генерировать непротиворечивые требования к паролю и email'у,
+      при этом "неправильные" пароли так же отправляются на сервер.
+
+      Бэкэнд на держится на aws lambda и каком-то бесплатном postgre-as-a-service. 
+
+      Кстати, вы можете потыкать приложение и попытаться найти ссылку на "доску почета"
+      с собранными данными.
   en:
-    name: 
-    short: 
+    name: Evil Signup Form
+    short: Evil and smart
     description: >
-      
+      Password form that would generate email/password requirements dynamically, 
+      forcing user to input as many different passwords as possible. 
+      Even 'invalid' passwords are stored, so that pairs (email/password) coud be used for bad things.
+
+      Made just4fun.
+
+      Btw, there is a hidden wall of shame. 
