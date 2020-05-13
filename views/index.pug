@@ -36,5 +36,10 @@ html(lang="ru")
 							h3(data-ru=category.i18n.ru) !{category.i18n.en}
 							ul
 								each project in category.projects
-									li
-										a(href="projects.pug#"+project.id data-ru=project.i18n.ru.name) !{project.i18n.en.name}
+									if project.i18n.en.name
+										li
+											a(href="projects.pug#"+project.id data-ru=project.i18n.ru.name) !{project.i18n.en.name}
+									else
+										li.todo
+											a.todo= project.filename.slice(0,-5)
+													

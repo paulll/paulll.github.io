@@ -71,11 +71,17 @@ a
 				margin 0.4em	
 			li>a
 				cursor pointer
-				background #2a2a2a
 				color whitesmoke
 				padding 0 0.5em
 				border-radius 4px
 				text-transform lowercase
 				text-decoration none
-				&:hover
-					background #111
+				&:not(.todo)
+					background #2a2a2a
+					&:hover
+						background #111
+				&.todo
+					cursor default
+			li.todo
+				opacity 0.2			
+				
