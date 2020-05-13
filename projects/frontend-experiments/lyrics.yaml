@@ -1,17 +1,25 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://box.paulll.cc/s/projects/lyrics/
+source: https://box.paulll.cc/s/projects/lyrics/main.html
+license: MIT
+technologies: [js]
+tags: [done]
+awesomeness: 10
 i18n:
   ru:
-    name: 
-    short: 
+    name: Lyrics & Visualization
+    short: Эксперимент со звуком в браузере
     description: >
-      
+      Визуализация и синхронизированный текст трека. Эксперимент с AudioContext API
+
+      Важно! В новых браузерах нужно куда-нибудь кликнуть чтобы был звук, и, возможно,
+      это сработает только сразу после перезагрузки страницы. Это связано с новыми 
+      политиками браузеров в отношении AudioContext API, не позволяющими автоматическое
+      воспроизведение звуков на сайтах.
   en:
-    name: 
-    short: 
+    name: Lyrics & Visualization
+    short: AudioContext API Experiment
     description: >
-      
+      Synchronized lyrics and visualization. Experiment with AudioContext API
+
+      Important! Modern browsers don't allow sound autoplay, so you have to click
+      somewhere on the page just after reload.
