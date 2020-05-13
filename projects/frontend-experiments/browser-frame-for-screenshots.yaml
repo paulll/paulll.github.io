@@ -1,17 +1,28 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://jsfiddle.net/paulll/gf0ufrLv/2/
+source: https://jsfiddle.net/paulll/gf0ufrLv/2/
+license: MIT
+technologies: [js]
+tags: [done]
+awesomeness: 12
 i18n:
   ru:
-    name: 
-    short: 
+    name: Рамка окна
+    short: Просто рамка окна приложения
     description: >
-      
+      Оформление окна приложения.
+      Сделал ради одного красивого скришнота:
+
+      <br>
+      <img src="https://sun9-12.userapi.com/c624416/v624416766/2ab5a/v93_UGJJVzA.jpg"></img><br>
+      <i>Тот самый скришнот</i><br><br>
+
+      Интересно почему я не сверстал такое для Cloudx..?
   en:
-    name: 
-    short: 
+    name: Window Frame
+    short: Just a window frame
     description: >
-      
+      Application window frame UI. Made just for one screenshot:
+
+      <br>
+      <img src="https://sun9-12.userapi.com/c624416/v624416766/2ab5a/v93_UGJJVzA.jpg"></img><br>
+      <i>That screenshot</i><br><br>
