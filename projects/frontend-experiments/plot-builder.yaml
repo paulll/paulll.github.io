@@ -1,17 +1,20 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://box.paulll.cc/s/projects/for/leo/PlotBuilder/main.html
+source: https://box.paulll.cc/s/projects/for/leo/PlotBuilder/
+license: MIT
+technologies: [js]
+tags: [done, requested]
+awesomeness: 11
 i18n:
   ru:
-    name: 
-    short: 
+    name: Рисовалка Графиков
+    short: Простая рисовалка двумерных графиков
     description: >
-      
+      Ну, приятный интерфейс, но ничего умного там нет. 
+      Canvas, без сторонних библиотек. Код времен Chrome 33
   en:
-    name: 
-    short: 
+    name: Simple Plot Builder
+    short: Simpele 2D plot builder
     description: >
+      Nice UI, but nothing else. 
+      Canvas, no dependencies. Chrome v33 age
       
