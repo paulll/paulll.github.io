@@ -1,17 +1,18 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: http://jsfiddle.net/paulll/fgp65vsj/13/
+source: http://jsfiddle.net/paulll/fgp65vsj/13/
+license: MIT
+technologies: [js]
+tags: [done]
+awesomeness: 10
 i18n:
   ru:
-    name: 
-    short: 
+    name: Имперский марш
+    short: восьмибитная javascript-версия
     description: >
-      
+      Проект от скуки, никакого практического смысла, просто эксперименты
+      с AudioContext API.
   en:
-    name: 
-    short: 
+    name: The Imperial March
+    short: javascript 8bit edition
     description: >
-      
+      Just experimenting with AudioContext API.
