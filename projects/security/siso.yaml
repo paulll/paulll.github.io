@@ -1,17 +1,21 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: https://github.com/paulll/siso
+license: MIT
+technologies: [typescript, babel, travis, jest, tslint, npm]
+tags: [done, lib]
+awesomeness: 100
 i18n:
   ru:
-    name: 
-    short: 
+    name: siso
+    short: Фреймворк для анализаторов
     description: >
-      
+      Фреймворк для автоматического анализа каких-либо рекурсивно вложенных данных, 
+      Изначально задумывался для автоматического решения CTF-задач и является самостоятельным
+      развитием одного из компонентов проекта <code>assctf</code>. 
   en:
-    name: 
-    short: 
+    name: siso
+    short: Framework for analyzers
     description: >
-      
+      Framework to build automated analyzers for recursive(nested) data.
+      It was originally designed for automatic solution of CTF tasks and originally
+      was a part of the <code>assctf</code> project.
