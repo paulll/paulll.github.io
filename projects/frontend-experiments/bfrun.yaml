@@ -1,17 +1,25 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
+deployment: null
+source: null
+license: MIT
+technologies: [js]
+tags: [done, acados]
 awesomeness: 0
 i18n:
   ru:
-    name: 
-    short: 
+    name: Интерпретатор Brainfuck
+    short: Простой интерпретатор простого языка
     description: >
-      
+      Написал за половину первой пары по информатике от скуки. Интернета там не было,
+      пришлось как-то себя развлекать. Внешне по интерфейсу в стиле всех
+      остальных моих приложений, хех. Минималистично и с темным фоном типа <code>#1c1c1c</code>
+
+      Лежит где-то на компах кафедры, потом может как-то вытащу в сюда. Но 
+      практической пользы от него точно ноль, так что это не приоритетная задача.
   en:
-    name: 
-    short: 
+    name: Brainfuck Interpreter
+    short: Simple interpreter for simple language
     description: >
+      Simple Brainfuck interpreter, a 45-minute project. Has minimalistic UI
+      with look&feel like as any other my project (<code>#1c1c1c</code> color, etc)
       
+      Lost sources somewhere, will publish later.
