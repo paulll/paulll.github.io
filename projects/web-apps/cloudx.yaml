@@ -1,17 +1,42 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: https://github.com/paulll/cloudx
+license: Private
+technologies: [js, jquery, php]
+tags: [done]
+awesomeness: 10
 i18n:
   ru:
-    name: 
-    short: 
+    name: Cloudx
+    short: Веб-ОС
     description: >
+      Один из первых сохранившихся проектов. «Облачная» операционная система, 
+      или что-то вроде того. Приложения запускались в iframe'ах, и молги использовать
+      API системы (в частности, доступ к файлам и управление окнами) через специальную
+      библиотеку. В то время не сущестовало всяких там ServiceWorker'ов и прочих 
+      удобных вещей. Сейчас (в 2020) это был бы проект на пару вечеров, думаю.
       
+      <br>
+      <center><img src="https://habrastorage.org/webt/qu/g5/aw/qug5awmufjrwnelzehkyq32y0xs.jpeg" /><br></center>
+      <center><i>Скрин с запущенным текстовым редактором</i></center>
+
+      <br>
+
+      <hr>Кстати, в то время мне очень не хватало свойства css <code>backdrop-filter</code>, что
+      позволило бы сделать что-то по типу эффектов windows aero.
+      <hr><br>
+
+      Бэкэнд на php, и отвечал он только за хранение файлов. Там ничего интересного. 
   en:
-    name: 
-    short: 
+    name: Cloudx
+    short: Web-OS
     description: >
-      
+      One of my very first projects. Cloud (web) operating system, based on iframe applications
+      with specific api (for filesystem access and window management). There was no ServiceWorkers 
+      or anything like that, so now it's quite simple to implement in a few evenings.
+
+      <br>
+      <center><img src="https://habrastorage.org/webt/qu/g5/aw/qug5awmufjrwnelzehkyq32y0xs.jpeg" /><br></center>
+      <center><i>Text/code editor in cloudx os</i></center>
+
+      <br>
+      Backend is written in php, nothing interesting there.
