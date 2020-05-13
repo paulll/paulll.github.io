@@ -1,17 +1,25 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: https://github.com/paulll/randomPerson
+license: MIT
+technologies: [js, yandex api]
+tags: [done, requested, obsolete]
+awesomeness: 10
 i18n:
   ru:
-    name: 
+    name: Генератор личностей
     short: 
     description: >
-      
+      Интересен тем что учитывает префиксы телефонных номеров, использует
+      API геокодера Яндекса для получения существующих адресов в том же регионе,
+      которому приналдежит номер по префиксу, и генерирует правдоподобные ники и пароли.
+
+      Написал за вечер ради спора где-то в комментариях.
+
+      С тех пор API геокодера поменялся, так что больше не работает. Исправления не приоритетны 
   en:
-    name: 
+    name: Identity Generator
     short: 
     description: >
-      
+      Uses Yandex Geocoder API to obtain addresses that exist in real world. 
+
+      API changed, so it's not working anymore. Won't fix in the near future
