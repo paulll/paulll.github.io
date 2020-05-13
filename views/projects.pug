@@ -14,12 +14,12 @@ html(lang="ru")
 			each category in categories
 				each project in category.projects
 					.block(id=project.id)
-						h2(data-ru=project.i18n.ru.name)= project.i18n.en.name
+						h2(data-ru=project.i18n.ru.name) !{project.i18n.en.name}
 						.technologies
 							.icon #
 							.items
 								each technology in project.technologies
-									.technology=technology
+									.technology !{technology}
 						.data(data-ru=project.i18n.ru.description)= project.i18n.en.description
 						.links-wrap
 							.links
