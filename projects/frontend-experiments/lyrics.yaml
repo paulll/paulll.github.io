@@ -6,7 +6,7 @@ tags: [done]
 awesomeness: 10
 i18n:
   ru:
-    name: Lyrics & Visualization
+    name: Текст и визуализация
     short: Эксперимент со звуком в браузере
     description: >
       Визуализация и синхронизированный текст трека. Эксперимент с AudioContext API
