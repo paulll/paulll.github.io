@@ -11,8 +11,14 @@ i18n:
     description: >
       Проект от скуки, никакого практического смысла, просто эксперименты
       с AudioContext API.
+
+      Важно! Нужно кликнуть в область просмотра чтобы пошел звук, это относительно
+      недавнее ограничение в браузерах.
   en:
     name: The Imperial March
     short: javascript 8bit edition
     description: >
       Just experimenting with AudioContext API.
+
+      Important! You have to click in result view to enable sound, because of
+      new restrictions in modern browser.
