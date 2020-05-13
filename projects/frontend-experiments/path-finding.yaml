@@ -6,10 +6,10 @@ tags: [done]
 awesomeness: 5
 i18n:
   ru:
-    name: Поиск пути
+    name: Визуализация поиска пути
     short: Визуализация Алгоритма Ли
     description: >
-      Простенькая визуализация, без внешних зависимостей.
+      Простенькая анимированная визуализация алгоритма Ли, без внешних зависимостей.
 
       Левой кнопкой - ставить/убирать стены, правой - начальную и конечную точку, 
       enter - запустить. 
@@ -17,7 +17,7 @@ i18n:
     name: Path finding
     short: Animated Lee algorithm visualization
     description: >
-      Simple visualization, no external dependencies.
+      Simple visualization of the Lee algorithm, without any external dependencies.
 
       Left mouse button - draw walls, right - start/finish positions,
       hit enter to run visualization.
