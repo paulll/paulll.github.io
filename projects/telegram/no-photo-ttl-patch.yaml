@@ -32,5 +32,5 @@ i18n:
       That patch sets <code>ttl</code> field to zero for each incoming media,
       so you can download or screenshot self-destructing media,
 
-      No sources, because distribution of such things is restricted by 
+      No sources, because distribution of such things is prohibited by the
       Telegram Terms of Service (<a href="https://core.telegram.org/api/terms">paragraph 1.4</a>)
