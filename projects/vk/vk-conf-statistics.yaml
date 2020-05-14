@@ -12,8 +12,31 @@ i18n:
       Работает прямо в браузере, без бэкэнда.
       Рисует разные графики активности людей в чате, 
       общую активность по дням недели и часам, и всякое подобное.
+
+      <h4>Скриншоты:</h4>
+
+      <center><img src="https://cs623222.vk.me/v623222766/476b8/H1zBG3KynyI.jpg"></img></center><br>
+      <center><img src="https://cs623222.vk.me/v623222766/476c0/Ozw1ah6FsTw.jpg"></img></center><br>
+      <center><img src="https://cs623222.vk.me/v623222766/476c8/B8qNxB1Om2w.jpg"></img></center><br>
+      <center><img src="https://cs623222.vk.me/v623222766/476d1/wy3ABjvYtww.jpg"></img></center><br>
+      <center><img src="https://cs623430.vk.me/v623430929/38c62/eLJs6WlNfgs.jpg"></img></center><br>
+      <center><img src="https://cs623430.vk.me/v623430929/38c58/R2xVOpRJPuo.jpg"></img></center><br>
+      <i><center>Ну, не очень красиво по нынешним меркам, но информативно</center></i>
+
+      Помню что делал там ещё что-то по распознаванию стилистики письма, но не помню к 
+      чему это пришло и к чему задумывалось. Но какие-то артефакты этого в коде остались, кстати.
   en:
     name: Chat statistics
     short: Different statistics for vk.com chat
     description: >
       Works directly in your browser, no backend.
+
+      <h4>Screenshots:</h4>
+
+      <center><img src="https://cs623222.vk.me/v623222766/476b8/H1zBG3KynyI.jpg"></img></center><br>
+      <center><img src="https://cs623222.vk.me/v623222766/476c0/Ozw1ah6FsTw.jpg"></img></center><br>
+      <center><img src="https://cs623222.vk.me/v623222766/476c8/B8qNxB1Om2w.jpg"></img></center><br>
+      <center><img src="https://cs623222.vk.me/v623222766/476d1/wy3ABjvYtww.jpg"></img></center><br>
+      <center><img src="https://cs623430.vk.me/v623430929/38c62/eLJs6WlNfgs.jpg"></img></center><br>
+      <center><img src="https://cs623430.vk.me/v623430929/38c58/R2xVOpRJPuo.jpg"></img></center><br>
+      <i><center>Kinda ugly, but useful</center></i>
