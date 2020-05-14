@@ -1,17 +1,28 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: null
+license: Private
+technologies: [node, js, telegram, tdlib]
+tags: [done]
+awesomeness: 15
 i18n:
   ru:
-    name: 
-    short: 
+    name: undelete
+    short: Антиудалялка сообщений
     description: >
-      
+      Сервис что сохранял входящие сообщения, и при их удалении
+      отправлял в личку сообщение с исходным содержимым удаленного 
+      сообщения. 
+
+      Ныне заброшен и не будет опубликован, так как телеграм прямым 
+      текстом запрещает распространение подобных вещей в
+      <a href="https://core.telegram.org/api/terms">пункте 1.4 своего ToS</a>
   en:
-    name: 
-    short: 
+    name: undelete
+    short: Saves deleted messages
     description: >
+      Service that saves your incoming messages and sends
+      you a message copy when it gets removed. 
+
+      Abandoned and will not be published, because such things are prohibited by the
+      Telegram Terms of Service (<a href="https://core.telegram.org/api/terms">paragraph 1.4</a>) 
       
