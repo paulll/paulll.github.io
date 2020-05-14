@@ -1,17 +1,24 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: null
+license: MIT
+technologies: [js, node, wacom, linux]
+tags: [done, to-publish]
+awesomeness: 1
 i18n:
   ru:
-    name: 
-    short: 
+    name: tab
+    short: Изменяет область отображения планшета wacom
     description: >
-      
+      Простенькая утилита что позволяет изменять активную область
+      планшета wacom (в основном для игры в osu!) на какую-то долю.
+      Пишешь <code>tab 3</code>, и активная область будет область
+      в верхнем левогом углу диагональю в 1/3 от доступной.
   en:
-    name: 
-    short: 
+    name: tab
+    short: Change active area for wacom tablet
     description: >
-      
+      Simple cli utility to change wacom tablet active aree
+      (primarily to ose with osu! game).
+      Run <code>tab 3</code>, and active area will be set to
+      rectangle in the top left corner with a diagonal 
+      of 1/3 of the available.
