@@ -1,17 +1,47 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: null
+license: Private
+technologies: [js, node, telegram]
+tags: [done, requested, to-publish]
+awesomeness: 10
 i18n:
   ru:
-    name: 
-    short: 
+    name: Задачник
+    short: Бот для тренировки алгебраических задач
     description: >
-      
+      Генерирует простейшие алгебраические выражения (на подобие <code>b=x+c*a</code>) 
+      и просит выразить оттуда <strong>x</strong>. Из интересного: как устроен
+      контроль сложности и генерации выражений, ну и отправляет он красивые картинки 
+      с вертикальными дробями вместо простого текста.
+
+      Писал для одной тян, у которой с этим всё было очень плохо. Та в итоге забила,
+      так что толку оказалось ноль, но не в топку же неделю работы. Позже
+      опубликую исходники. 
+
+      Фичи:<br>
+      — вариативный текст сообщений бота<br>
+      — генерация картинок с выражениями<br>
+      — ручная модерация и контроль задач<br>
+      — подробная статистика вместе со среднем временем ответа и т.д.<br>
+      — учет количества решенных задач, ежедневные цели<br>
+
+      <br>
+      <center><img width="400px" src="https://habrastorage.org/webt/_q/qu/i_/_qqui_kyhfcefeymqp7_y_ats-e.jpeg"/></center>
+      <center><i>Сохранившийся скрин</i></center><br><br>
   en:
-    name: 
-    short: 
+    name: Teletrain
+    short: Bot to train solving simple algebraic equations
     description: >
-      
+      Generates algebraic expressions like <code>b=x+c*a</code> and asks
+      user to express <strong>x</strong>. 
+
+      Features:<br>
+      — variative text for bot messages<br>
+      — task image generation<br>
+      — manual task moderation<br>
+      — daily goals<br>
+      — verbose statistics including average time, etc<br>
+
+      <br>
+      <center><img src="https://habrastorage.org/webt/_q/qu/i_/_qqui_kyhfcefeymqp7_y_ats-e.jpeg"/></center>
+      <center><i>Screenshot with workflow example</i></center><br><br>
