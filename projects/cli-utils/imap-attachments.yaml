@@ -1,17 +1,27 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: https://github.com/paulll/imap-attacments
+license: MIT
+technologies: [imap, node, js]
+tags: [done, requested]
+awesomeness: 20
 i18n:
   ru:
-    name: 
-    short: 
+    name: Загрузка почтовых вложений
+    short: Cкачивает почтовые вложения с заданных ящиков
     description: >
-      
+      Скачивает все вложения за указанный период времени для заданных аккаунтов. 
+      Аккаунты подаются в типичном текстовом csv-файле со строчками вида <code>login;password</code>
+
+      Попросили сделать какие-то неизвестные и мутные люди, причем 
+      через цепочку знакомых, и напрямую ни разу с ними не общался и не переписывался.
+      Странная фигня. Но они дали за это два приглашения на Positive Hack Days 9 и
+      я всем доволен. 
   en:
-    name: 
-    short: 
+    name: Download mail attachments
+    short: Downloads attachments from given emails
     description: >
-      
+      Just downloads email attachments for the given time period and given users
+      list. Accounts are specified in typical csv/text files (with lines like <code>login;password</code>)
+
+      I still don't know who asked me to do this, but i was given two invitations to Positive Hack Days 9
+      for doing it, so i'm satisfied.
