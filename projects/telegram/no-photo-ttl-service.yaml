@@ -1,17 +1,34 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
+deployment: null
+source: null
+license: Private
+technologies: [telegram, node, js, tdlib]
+tags: [abandoned]
 awesomeness: 0
 i18n:
   ru:
-    name: 
-    short: 
+    name: Без таймеров (сервис)
+    short: сохраняет самоуничтожающиеся фото
     description: >
-      
+      В обычном чате телеграма можно отправить фото с таймером. Оно сгорит
+      через заданное время после прочтения, и его невозможно заскринить. 
+
+      Этот сервис получает входищие сообщения, и если видит какое-нибудь с таймером,
+      то сохраняет фотографию и пересылает в избранное.
+
+      Проект заброшен в пользу варианта с пропатченным клиентом. 
+
+      Не выкладываю исходники, да и телеграм прямым текстом запрещает
+      распространение подобных вещей в <a href="https://core.telegram.org/api/terms">пункте 1.4 своего ToS</a>
   en:
-    name: 
-    short: 
+    name: No TTL serivce
+    short: saves self-destructing media
     description: >
-      
+      You can send self-destructing photo in basic Telegram chats (even not private/encryped ones)
+
+      This service receives your incoming messages and if it see any
+      self-destructing photo, service will copy it to your saved messages. 
+
+      Discontinued in favor of android client patch alternative.
+
+      No sources, because distribution of such things is restricted by 
+      Telegram Terms of Service (<a href="https://core.telegram.org/api/terms">paragraph 1.4</a>)
