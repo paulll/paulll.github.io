@@ -20,7 +20,7 @@ html(lang="ru")
 							.items
 								each technology in project.technologies
 									.technology !{technology}
-						.data(data-ru=project.i18n.ru.description)= project.i18n.en.description
+						.data(data-ru=project.i18n.ru.description) !{project.i18n.en.description}
 						.links-wrap
 							.links
 								if project.deployment
