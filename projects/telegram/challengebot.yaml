@@ -1,17 +1,24 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
+deployment: null
+source: null
+license: Private
+technologies: [js, node, telegram]
+tags: [done, cringe]
 awesomeness: 0
 i18n:
   ru:
-    name: 
-    short: 
+    name: Челлендж-Бот
+    short: Бот для одного челленджа
     description: >
-      
+      Эм.. Суть очень кринжовая и достойна /б/, так что ограничусь 
+      в описании тем, что эта штука рассчитывала рейтинг
+      в определенном челлендже, по взвешенной системе, аналогично
+      тому как в osu! считается показатель <a href="https://osu.ppy.sh/help/wiki/Performance_Points">pp</a>.
   en:
-    name: 
-    short: 
+    name: Сhallenge
+    short: Bot for one challenge 
     description: >
-      
+      Very cringe thing, so no sources or any usage information.
+      That thing calculated user rating in one.. competition. 
+      Rating formula was inspired by the osu! <a href="https://osu.ppy.sh/help/wiki/Performance_Points">performance points</a>
+      idea. 
+
