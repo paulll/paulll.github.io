@@ -1,17 +1,36 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: null
+license: Private
+technologies: [java, kotlin, telegram, dexpatcher]
+tags: [done]
+awesomeness: 10
 i18n:
   ru:
-    name: 
-    short: 
+    name: Без таймеров
+    short: убирает таймер с фотографий
     description: >
-      
+      В обычном чате телеграма можно отправить фото с таймером. Оно сгорит
+      через заданное время после прочтения, и его невозможно заскринить. 
+
+      Патч устанавливает всем входящим сообщениям ttl=0, то есть отображает
+      его как обычное сообщение с фотографией. Тем не менее, это, очевидно,
+      не изменяет поведения других клиентов и поведение сервера: если сообщение
+      открыть с нормального клиента, оно удалится по прочтению, и пропадет
+      в том числе из локального хранилища клиента.
+
+      Представляет собой патч, применимый для любых андройд-клиентов на основе 
+      официального. Сам применял для Plus Messenger.
+
+      Не выкладываю исходники, да и телеграм прямым текстом запрещает
+      распространение подобных вещей в <a href="https://core.telegram.org/api/terms">пункте 1.4 своего ToS</a>
   en:
-    name: 
-    short: 
+    name: No TTL patch
+    short: shows self-destructing photos as normal ones
     description: >
-      
+      You can send self-destructing photo in basic Telegram chats (even not private/encryped ones)
+
+      That patch sets <code>ttl</code> field to zero for each incoming media,
+      so you can download or screenshot self-destructing media,
+
+      No sources, because distribution of such things is restricted by 
+      Telegram Terms of Service (<a href="https://core.telegram.org/api/terms">paragraph 1.4</a>)
