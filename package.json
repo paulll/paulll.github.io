@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "what's behind the https://paulll.cc",
   "scripts": {
-    "build": "rm -rf dist .parcel-cache && parcel build views/*"
+    "build": "rm -rf dist && parcel build views/*.pug --no-cache"
   },
   "repository": {
     "type": "git",
