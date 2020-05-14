@@ -1,17 +1,41 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: tg://resolve?domain=thunderalertbot
+source: https://git.paulll.cc/paulll/thunderstruck
+license: MIT
+technologies: [python, telethon]
+tags: [done, acados]
+awesomeness: 20
 i18n:
   ru:
-    name: 
-    short: 
+    name: @thunderalertbot
+    short:  Простой бот для важных уведомлений
     description: >
-      
+      Представьте что у вас есть большой (500+ участников) чат, и нередко случается
+      необходимость у кого-то оповестить всех о чем-то очень важном и очень срочном.
+      Отдельный чат или канал для этого не годится: люди начинают обсуждать оповещение
+      в том же потоке. В итоге важное сообщение затеряется, а люди в итоге просто отключат
+      уведомления.
+
+      Бот позволяет отделить важное от не важного. По сути, он просто
+      пересылает помеченные сообщения в из чата в специальный канал,
+      куда может писать только бот.
+      Отвечаешь на сообщение знаком <code>!</code>, и оно пересылается. 
+
+      Вообще довольно специфичный кейс. 
+      Бот рассчитан только на одну пару чат:конфа. Для своих случаев вам придется самим
+      хостить бота!
   en:
-    name: 
-    short: 
+    name: @thunderalertbot
+    short: Alert notifications for groups
     description: >
-      
+      The case: large group with 500+ members, and often someone has to 
+      notify everyone in the chat about something very important and urgent.
+      Separate chat is not a good soultion: people will discuss notifications
+      right in that chat, which leads to floooding the chat. As a result, 
+      the initial message is lost, and users have notifications disabled for 
+      that group.
+
+      So, the setup is: a chat, a channel and bot with admin privelegies in both. 
+      When anyone replies to the message with <code>!</code> sign, that message
+      is forwarded to the channel. That's it. 
+
+      Very specific case, perhaps.
