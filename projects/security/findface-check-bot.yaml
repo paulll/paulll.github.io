@@ -1,17 +1,73 @@
-deployment: https://
+deployment: null
 source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+license: Private
+technologies: [node, mongodb, telegram, pwn]
+tags: [done, obsolete]
+awesomeness: 30
 i18n:
   ru:
-    name: 
-    short: 
+    name: @ffdbcheckbot 
+    short: Проверка на утечку в Вконтакте
     description: >
-      
+      <h4>Только не пускайте слюни, всё это уже не актуально</h4>
+
+      Бот, который проверял наличие человека или его друзей в утечке какого-то там Контакта,
+      и выдавал access_token'ы нашедшихся. К слову, это <strong>960 тысяч</strong> юзеров вконтакте,
+      из которых более к <strong>300 тысячам</strong> был доступ, причем практически все - активные
+      настоящие пользователи со старыми страницами, много всяких медийных. Полагаю, это по масштабу 
+      сойдет за крупнейший <s>взлом</s> загрузку открытых данных.
+
+      Откуда у меня такая утечка? Ну, это длинная история. Но они просто лежали в открытом
+      виде, так что вряд ли тут что-то криминальное. Тем более копию тех данных
+      я никуда не отправлял, а бота использовал только сам. Да и вообще это был не я, и 
+      это все выдумка, а любые совпадения с реальным миром - случайность. Отстаньте
+
+      <br>
+      <center><img src="https://habrastorage.org/webt/9u/c_/nu/9uc_nuxyomteuuhkyerf_5-ws38.png" /></center>
+      <center><i>Тот самый бот</i></center><br><br>
+
+      Обозначения бота:<br>
+      <strong>[full]</strong> - полный доступ к странице, в т.ч. к сообщениям <br>
+      <strong>[basic]</strong> - сокращенный доступ (фото) <br>
+      <strong>[none]</strong> - доступ был раньше, но утерян <br>
+      <br>
+
+      Токен выдавался кликабельной строчкой, и копировался в буфер обмена при нажатии. Затем
+      его можно было использовать в <a href="https://a47.me/apidog/apidag/index.html">пропатченном apidog</a>
+
+      Кстати, да. Вконтакте спустя год таки аннулировал те токены, пусть они и были с неограниченным сроком
+      действия. Про утечку админы знали с самого начала, просто то были не Вконтакте, а их партнеры, и,
+      видимо, постеснялись признаться об этом Вконтакте незамедлительно. Особенно учитывая что у партнеров
+      таких данных тоже не должно было быть, ситуация была неоднозначная.
+
+      Я бы был бы сейчас очень богат, если бы где-нибудь это бы сбагрил, хех. 
+
+      <i>P.S. Только не надо публикаций об этом, хорошо? Я хотел бы избежать шумихи</i>
   en:
-    name: 
-    short: 
+    name: @ffdbcheckbot
+    short: Query the vk.com leak database
     description: >
-      
+      <h4>The information below is no longer actual</h4>
+
+      Telegram bot, that checks given user and his friends in vk leak database, and if
+      finds, gives you access_token for each user found. By the way, there is more then
+      <strong>960k</strong> users in that database, and more then <strong>300k</strong>
+      of them confirmed with access. Major part of them are media persons, bloggers,
+      vk team members.   
+
+      <br>
+      <center><img src="https://habrastorage.org/webt/9u/c_/nu/9uc_nuxyomteuuhkyerf_5-ws38.png" /></center>
+      <center><i>That one bot</i></center><br><br>
+
+      Description:<br>
+      <strong>[full]</strong> - full access, including private messages<br>
+      <strong>[basic]</strong> - partial access (photo) <br>
+      <strong>[none]</strong> - lost access (session invalidated)<br>
+      <br>
+
+      The token then could be used in something like a <a href="https://a47.me/apidog/apidag/index.html">pathed apidog</a>
+
+      By the way, tokens were invalidated after one year, so now that's just a history.
+
+      <i>P.S. Please dont't share that information. No linking, no copying. Just read youself, 
+      and nothing else, please</i>
