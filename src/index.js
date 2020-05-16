@@ -9,6 +9,14 @@ if (localStorage.getItem('paulll.hl') == 'ru' || !localStorage.getItem('paulll.h
 	}
 }
 
+window.addEventListener('load', () => {
+	const title = document.querySelector(':target h2') && document.querySelector(':target h2').textContent;
+	if (title) {
+		document.getElementsByTagName('title')[0].textContent = `${title} — paulll`;
+	}
+});
+
+
 /* hits / uniq hits calculation */
 fetch('https://api.paulll.cc/landing/hit', {
 	method: 'POST',
