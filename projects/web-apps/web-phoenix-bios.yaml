@@ -1,17 +1,35 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://box.paulll.cc/s/phoenix-bios/
+source: https://git.paulll.cc/paulll/web-phoenix-bios
+license: MIT
+technologies: [js, pug, stylus]
+tags: [done, requested]
+awesomeness: 50
 i18n:
   ru:
-    name: 
+    name: Эмулятор BIOS
     short: 
     description: >
-      
+      Одна тня попросила сделать ей такую курсовую (а-ля графическая справка для настроек CMOS/BIOS), 
+      и вот что из этого получилось. Эмулятор меню настроек CMOS(BIOS) в браузере, с редактируемым 
+      описанием элементов. Правда ничего за это мне так и не досталось, но это всё равно лишь сутки работы.
+      Без левых библиотек: всё, как обычно, по хардкору (правда есть полифиллы на случай IE).
+
+      <h4>Управление:</h4>
+      - стрелочки/enter: перемещаться по менюшкам<br>
+      - навести мышку: читать описание<br>
+      - клик мышкой: редактировать описание элемента<br> 
+
+      <center><img src="https://habrastorage.org/webt/4u/fe/uf/4ufeufivwivcdm5rxkdanhiemvm.png"/></center>
+      <center><i>Как-то так</i></center>
   en:
-    name: 
-    short: 
+    name: BIOS Emulator
+    short: cmos setup utilily emulator 
     description: >
+      One girl asked me to do her course work, so that is it.
+      BTW, gained nothing from this :c.
+
+      Tested in Chrome & Firefox.
+      Keyboard for bios manipulation, use mouse to view & edit tooltips.
+
+      <center><img src="https://habrastorage.org/webt/4u/fe/uf/4ufeufivwivcdm5rxkdanhiemvm.png"/></center>
       
