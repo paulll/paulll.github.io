@@ -1,5 +1,5 @@
 doctype html
-html(lang="ru")
+html
 	head
 		meta(charset="utf8")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
@@ -8,6 +8,7 @@ html(lang="ru")
 		script(defer="defer" src="../src/index.js")
 		//link(rel="icon" type="image/svg" href="../style/favicon.png")
 		title paulll
+		style(data-ru="") .rus{display:none;}
 	body
 		.content
 			.block 
@@ -15,9 +16,9 @@ html(lang="ru")
 			.block
 				h2(data-ru="Привет, Мир!") Hello, world!
 				p 
-					.line I am a full stack <span><s>junior</s> suffering from impostor syndrome</span> developer, doing things since ~11yo.
-					.line Check out my awesome projects below
-					.line And feel free to contact me on <a href="tg://resolve?domain=pauljs2">telegram</a>
+					.line(data-ru="Я — фул-стак разработчик (middle, полагаю). Занимаюсь проектами где-то c 11 лет.") I am a full stack <span><s>junior</s> suffering from impostor syndrome</span> developer, doing things since ~11yo.
+					.line(data-ru="Ниже огромный каталог личных проектов с описаниями. Полагаю, это будет объективнее чем моя болтовня (Talk is cheap. Show me the code), да и синдром самозванца мешает..") Check out my awesome projects below
+					.line(data-ru="По всем вопросам пишите в <a href=\"tg://resolve?domain=pauljs2\">телеграм</a>, ну или на <a href=\"mailto:paulll@derpy.ru\">почту</a>, которую я не читаю.") And feel free to contact me on <a href="tg://resolve?domain=pauljs2">telegram</a>
 			.block
 				h2(data-ru="Последние проекты") Most recent things
 				.things
@@ -43,4 +44,10 @@ html(lang="ru")
 									else
 										li.todo
 											a.todo= project.filename.slice(0,-5)
-													
+			.block.rus
+				h2 Ищу работу
+				p 
+					.line 
+						| В какой-нибудь небольшой, уютной IT-компании, где нет бюрократии и формальностей. 
+						| Классно, если она занимается разработкой собственных проектов,
+						| новых и интересных, где можно проявить креативность. Москва / Санкт-Петербург  
