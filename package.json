@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "what's behind the https://paulll.cc",
   "scripts": {
-    "build": "rm -rf dist && parcel build views/index.pug --no-cache"
+    "build": "rm -rf dist && parcel build views/index.pug --no-cache && cp static/* dist"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "parcel": "^2.0.0-alpha.3.2",
-    "parcel-plugin-browserconfig": "^1.0.5",
     "yaml": "^1.9.2"
   }
 }
