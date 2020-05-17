@@ -3,13 +3,8 @@
   "version": "1.0.0",
   "description": "what's behind the https://paulll.cc",
   "scripts": {
-    "build": "rm -rf dist && parcel build --no-cache"
+    "build": "rm -rf dist && parcel build views/index.pug --no-cache"
   },
-  "source": [
-    "views/index.pug",
-    "assets/favicon.ico",
-    "assets/browserconfig.xml"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paulll/paulll.github.io.git"
