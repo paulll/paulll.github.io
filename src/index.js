@@ -31,13 +31,13 @@ window.addEventListener('load', () => {
 				cores: navigator.hardwareConcurrency, 
 				memory: navigator.deviceMemory,
 				dnt: navigator.doNotTrack,
-				connection: {
+				connection: navigator.connection ? {
 					type: navigator.connection.effectiveType,  
 					rtt: navigator.connection.rtt, 
 					saveData: navigator.saveData, 
 					downlink: navigator.downlink,
 					maxDownlink: navigator.downlinkMax
-				},
+				} : {},
 				platform: navigator.platform,
 				pixelRatio: window.devicePixelRatio
 			}
