@@ -1,5 +1,5 @@
 deployment: https://box.paulll.cc/s/yajla/
-source: https://github.com/paulll/yajla
+source: https://git.paulll.cc/paulll/yajla
 license: MIT
 technologies: [js, parcel, stylus, pug, git, trianglify]
 tags: [done]
