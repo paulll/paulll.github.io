@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/paulll
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://paulll.cc
+  * I am paulll (https://keybase.io/paulll) on keybase.
+  * I have a public key with fingerprint 8175 24E0 F819 D4D1 D720  95B2 7F8B 4FAF 3060 83AF
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.8.20"
+        },
+        "key": {
+            "eldest_kid": "0101fee6c0b192690652d025cbf723c2a98f9b2a09809520b350973eeb2c45a12bc20a",
+            "fingerprint": "817524e0f819d4d1d72095b27f8b4faf306083af",
+            "host": "keybase.io",
+            "key_id": "7f8b4faf306083af",
+            "kid": "0101fee6c0b192690652d025cbf723c2a98f9b2a09809520b350973eeb2c45a12bc20a",
+            "uid": "6c306fae471e4db4088bf801f9d99b19",
+            "username": "paulll"
+        },
+        "service": {
+            "hostname": "paulll.cc",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1442942292,
+    "expire_in": 157680000,
+    "prev": "30f8a2e95e033ad3a25aa1c62a431a3783158e0aa2d62e4cf1d2b7a8e507a0b8",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGtUm1IFEEYvvMrS6X8EQj54xjKoOyamd293b2+qH5lCX1DQlwzu7Pe6rV73q3a
+Uf4qqMSiDzKsrNAKCsEggqywMjBCsCgyIy2Uii41iogwDZsVg4R+Nr+G930+3veZ
+OZaT6sn09pzvHu682fnF25Wknu3eI1v3AmrrCRDcC7SIySzHvVlkNwNBUM4SlMSZ
+37R9lq0zf1ncN4UpBFUsFjdti6OgX/FjCGoKXbzLZhGdxZ1Quam7XQSRwVhAgxSp
+OKDCgIR1iCWNGjIWNExUxVApJlBVoCphSAUJqrLAGMWaKBGEqYYh4YaGaZWyWDRm
+uiMCBckSFhk0FKTqoo50GXM6xbKhUNEghgADUBGIwYlhO+5MWwZMThqaHO8f+P88
+d+WkXEDjDgZhooyYqFMRKgo1FG6h6qrKHVxgnMWmgo+Sykgk4kbKa1WmxtxY3T2m
+9f2axmnRmO3Ymh3h5bDjRIMuy0lEXVg1o6EpgRA1LZ0n+PfLnUAcqjmmK4lEEasi
+xiouBGxP1IyxkMkhSJIDCuTH9WFVXFPgkRPMVIlBQSC6QLBECNICmIgCIoKsCEhS
+GCQE6wHMRM1AOqYyUZgEZQKpAtydKiwbBLmTQ0q5ZNwstYhTGWOg5rA3P83jzfRk
+pKe4f9Mza+acPx92Ys+MifjC9Y9rdjX3oSJ2b9+6+TuzzM0Vsa6TbfV5j67bBUU+
+OScVYfL0R1rzeN/3geZwq52x4smPs4eEhFDYHvEeXf9mbsnojdpiZY1/0diF9hVl
+DJDxdm9j1X7jynDD+LyUkfCZ6mfsu2/k0KmrXz8//LV6W12WWtEKrt0ZWX7i3M2B
+4ds75jQt67DSskHP81lWdvqLurULNr37WJA/luwN39r1tHXjK/t1XfjS4s67ve9z
+NyTFxm4nqx+2gJR6cGDVUNn9nsu9pzNGy4vbBo8fyLs7NPut/nN0aXoyfUvug/r+
+1IvwU2ayIzg4mver4WBLW8mS1pXfij68bGxOZtc2BV/9Bg==
+=cKJc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/paulll
+
+==================================================================
