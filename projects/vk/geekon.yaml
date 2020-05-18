@@ -1,6 +1,6 @@
 deployment: null
 source: null
-license: private
+license: Private
 technologies: [js, pug, stylus, vk.com api]
 tags: [private, done, to-publish]
 awesomeness: 10
