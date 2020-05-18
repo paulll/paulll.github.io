@@ -17,6 +17,21 @@ html, body
 	html, body
 		font-size 1.1rem
 
+*::-webkit-scrollbar {
+    width 0.6em
+    background-color black
+} 
+
+*::-webkit-scrollbar-thumb {
+    background-color red
+    border-radius 1em
+}
+
+*::-webkit-scrollbar-track
+	-webkit-box-shadow inset 0 0 6px rgba(255,255,255,0.3);
+	background-color black;
+
+
 body 
 	display flex
 	justify-content center 
@@ -25,6 +40,10 @@ h1
 	font-size 5em
 	font-family 'Roboto Slab'
 	font-weight 400
+
+h1,h2	
+	&:first-letter
+		color red
 
 .line span
 	display inline
