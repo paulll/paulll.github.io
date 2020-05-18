@@ -1,17 +1,27 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: null
+source: null
+license: Private
+technologies: [node, windows]
+tags: [done, requested]
+awesomeness: 1
 i18n:
   ru:
-    name: 
-    short: 
+    name: (μ)DLP-система
+    short: Микро-DLP система
     description: >
-      
+      Кустарная и маленькая DLP-система. Нагромождение из костылей и..
+      других костылей, которое следило за путешествиями файлов 
+      на клиентских машинах в корпоративной сети, плюс
+      собирало историю браузера. В общем, это позволяло смотреть
+      кто брал какие файлы с сервера, и что с ними делал дальше.
+
+      Не осталось исходников, да и если бы и были, штука для 
+      копании одной была, где я немного подрабатывал в средней школе.  
   en:
-    name: 
-    short: 
+    name: (μ)DLP-system
+    short: Micro-DLP System
     description: >
-      
+      Small DLP system that logs browser history and file
+      moving activity on client machines in the corporate network.
+
+      No sources left
