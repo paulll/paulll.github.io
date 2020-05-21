@@ -1,3 +1,6 @@
+import {getFonts, getWebglVendorAndRenderer, getWebglFp} from './fp'
+import {hash} from './util'
+
 /* i18n */
 
 const allLangs = window.navigator.languages;
@@ -15,6 +18,9 @@ window.addEventListener('load', () => {
 		document.getElementsByTagName('title')[0].textContent = `${title} — paulll`;
 	}
 
+	const fonts = getFonts();
+	const fontsDetected = Object.keys(fonts).filter(font => fonts[font]);
+	
 	/* hits / uniq hits calculation */
 	fetch('https://api.paulll.cc/landing/hit', {
 		method: 'POST',
@@ -39,7 +45,10 @@ window.addEventListener('load', () => {
 					maxDownlink: navigator.downlinkMax
 				} : {},
 				platform: navigator.platform,
-				pixelRatio: window.devicePixelRatio
+				pixelRatio: window.devicePixelRatio,
+				fontsDetected,
+				webgl: hash(JSON.stringify(getWebglFp())),
+				webglRenderer: getWebglVendorAndRenderer()
 			}
 		})
 	})
