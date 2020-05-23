@@ -111,6 +111,11 @@ const taskStaticAssets = async () => {
 		.pipe(gulp.dest('dist'))
 }
 
+const taskIndexRedirJs = async () => {
+	return gulp.src('assets/js/index-redir.js')
+		.pipe(gulp.dest('dist/js'));
+}
+
 let _jscache;
 const taskJavascript = async () => {
 	return rollup({input: 'assets/js/index.js', format: 'iife', cache: _jscache})
@@ -126,7 +131,8 @@ exports.default = gulp.parallel(
 	taskStaticAssets, 
 	taskJavascript,
 	taskMainPage,
-	taskIndexPage
+	taskIndexPage,
+	taskIndexRedirJs
 );
 
 exports.watch = () => gulp.watch(['assets/**', 'projects/**/*.yaml', 'views/**/*.pug'], exports.default)
