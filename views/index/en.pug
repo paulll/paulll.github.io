@@ -1,0 +1,53 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(rel="stylesheet" href="/style/index.css")
+		link(href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet")
+		script(defer="defer" src="/js/bundle.js")
+		link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+		link(rel="manifest" href="/site.webmanifest")
+		link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+		meta(name="msapplication-TileColor" content="#b91d47")
+		meta(name="theme-color" content="#ffffff")
+		title paulll
+	body
+		.content
+			.block 
+				h1 pau<span class="red">lll</span>
+			.block
+				h2 Hello, world!
+				p 
+					.line I am a full stack <span><s>junior</s> suffering from impostor syndrome</span> developer, doing things since ~11yo.
+					.line Check out my awesome projects below
+					.line And feel free to contact me on <a href="tg://resolve?domain=pauljs2">telegram</a>
+			.block
+				h2 Most recent things
+				.things
+					.line <a href="projects.pug#7f54977d2390d272"><b>Yajla</b></a> — Yet Another Japanese Learing App
+					.line <a href="projects.pug#70dcfce5f46cd5c4"><b>this</b></a> — The site you're currenty on
+					.line <a href="tg://resolve?domain=iqdbsearchbot"><b>@iqdbsearchbot</b></a> — Telegram bot to search by images
+					.line <a href="projects.pug#40d6c10249dd181f"><b>graphite</b></a> — Social graph analysis platform
+					.line <a href="projects.pug#85ee1a7c75ec4ff3"><b>ESF</b></a> — Evil Signup Form, just give it a try :D
+					.line <a href="projects.pug#16ba5ec090721062"><b>siso</b></a> — Automated decomposition and solution of some CTF-like tasks
+					.line <a href="projects.pug#c8c78bf72a48b1e5"><b>@chandjbot</b></a> — Telegram bot to organize your music library
+					//.line <a href="https://github.com/paulll/inverted-index"><b>rust-inverted-index</b></a> — Simple embedded inverted index database
+			.block
+				h2 By category
+				.projects
+					each category in categories
+						.tag 
+							h3 !{category.name}
+							ul
+								each project in category.projects
+									if project.name
+										li
+											a(href=project.href) !{project.name}
+									else
+										li.todo
+											a.todo= project.href.slice(0,-5).split('/').pop()
+			.proof(style="display:none;")
+				a(rel="me" href="https://lor.sh/@paulll") mastodon profile

@@ -1,9 +1,9 @@
 {
-  "name": "paulll.github.io",
-  "version": "1.0.0",
+  "name": "paulll.cc",
+  "version": "2.0.0",
   "description": "what's behind the https://paulll.cc",
   "scripts": {
-    "build": "rm -rf dist && parcel build views/index.pug --no-cache && cp static/* dist"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -14,13 +14,20 @@
   "bugs": {
     "url": "https://github.com/paulll/paulll.github.io/issues"
   },
-  "homepage": "https://github.com/paulll/paulll.github.io#readme",
-  "devDependencies": {
-    "pug": "^2.0.4",
-    "stylus": "^0.54.7"
-  },
+  "homepage": "https://paulll.cc/",
   "dependencies": {
-    "parcel": "^2.0.0-alpha.3.2",
-    "yaml": "^1.9.2"
+    "cssnano": "^4.1.10",
+    "fast-glob": "^3.2.2",
+    "gulp": "^4.0.2",
+    "gulp-cached": "^1.1.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "pug": "^2.0.4",
+    "rollup-stream": "^1.24.1",
+    "through2": "^3.0.1",
+    "vinyl": "^2.2.0",
+    "vinyl-source-stream": "^2.0.0",
+    "yaml": "^1.10.0"
   }
 }

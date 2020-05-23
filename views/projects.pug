@@ -3,40 +3,38 @@ html
 	head
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-		link(rel="stylesheet" href="../style/projects.styl")
+		link(rel="stylesheet" href="/style/projects.css")
 		link(href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet")
-		script(defer="defer" src="../src/index.js")
-		link(rel="apple-touch-icon" sizes="180x180" href="../style/apple-touch-icon.png")
-		link(rel="icon" type="image/png" sizes="32x32" href="../style/favicon-32x32.png")
-		link(rel="icon" type="image/png" sizes="16x16" href="../style/favicon-16x16.png")
-		link(rel="manifest" href="../static/site.webmanifest")
-		link(rel="mask-icon" href="../style/safari-pinned-tab.svg" color="#5bbad5")
+		script(defer="defer" src="/js/bundle.js")
+		link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+		link(rel="manifest" href="/site.webmanifest")
+		link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
 		meta(name="msapplication-TileColor" content="#b91d47")
 		meta(name="theme-color" content="#ffffff")
 		title paulll::projects
 		meta(name="robots" content="noindex, nofollow, nosnippet")
 	body
 		.content
-			each category in categories
-				each project in category.projects
-					.block(id=project.id)
-						h2(data-ru=project.i18n.ru.name) !{project.i18n.en.name}
-						.technologies
-							.icon #
-							.items
-								each technology in project.technologies
-									.technology !{technology}
-						.data(data-ru=project.i18n.ru.description) !{project.i18n.en.description}
-						.links-wrap
-							.links
-								if project.deployment
-									a.icon.deployment(href=project.deployment)
-								if project.source
-									a.icon.repo(href=project.source)
-								if project.license == 'Private'	
-									.icon.private
-								if project.license == 'MIT'
-									.icon.mit
-										span mit
+			.block
+				h2 !{project.name}
+				.technologies
+					.icon #
+					.items
+						each technology in project.technologies
+							.technology !{technology}
+				.data !{project.description}
+				.links-wrap
+					.links
+						if project.deployment
+							a.icon.deployment(href=project.deployment)
+						if project.source
+							a.icon.repo(href=project.source)
+						if project.license == 'Private'	
+							.icon.private
+						if project.license == 'MIT'
+							.icon.mit
+								span mit
 			#footer
