@@ -6,7 +6,7 @@ tags: [done, obsolete]
 awesomeness: 30
 i18n:
   ru:
-    name: @ffdbcheckbot 
+    name: '@ffdbcheckbot'
     short: Проверка на утечку в Вконтакте
     description: >
       <h4>Только не пускайте слюни, всё это уже не актуально</h4>
@@ -44,7 +44,7 @@ i18n:
 
       <i>P.S. Только не надо публикаций об этом, хорошо? Я хотел бы избежать шумихи</i>
   en:
-    name: @ffdbcheckbot
+    name: '@ffdbcheckbot'
     short: Query the vk.com leak database
     description: >
       <h4>The information below is no longer actual</h4>

@@ -6,7 +6,7 @@ tags: [done]
 awesomeness: 50
 i18n:
   ru:
-    name: @chandjbot
+    name: '@chandjbot'
     short: Бот для организации музыкальной библиотеки в телеге 
     description: >
       Создаешь приватный канал, добавляешь туда бота админом
@@ -19,7 +19,7 @@ i18n:
       — Выделять исполнителя и название из заголовка<br>
       — Прикреплять обложку<br>
   en:
-    name: @chandjbot
+    name: '@chandjbot'
     short: Telegram bot to organize your music library
     description: >
       Just create a new private telegram channel, add that 

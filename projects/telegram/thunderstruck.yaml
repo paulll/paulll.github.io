@@ -6,7 +6,7 @@ tags: [done, acados]
 awesomeness: 20
 i18n:
   ru:
-    name: @thunderalertbot
+    name: '@thunderalertbot'
     short:  Простой бот для важных уведомлений
     description: >
       Представьте что у вас есть большой (500+ участников) чат, и нередко случается
@@ -24,7 +24,7 @@ i18n:
       Бот рассчитан только на одну пару чат:конфа. Для своих случаев вам придется самим
       хостить бота!
   en:
-    name: @thunderalertbot
+    name: '@thunderalertbot'
     short: Alert notifications for groups
     description: >
       The case: large group with 500+ members, and often someone has to 
