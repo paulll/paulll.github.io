@@ -111,18 +111,16 @@ const taskStaticAssets = async () => {
 		.pipe(gulp.dest('dist'))
 }
 
-const taskIndexRedirJs = async () => {
-	return gulp.src('assets/js/index-redir.js')
-		.pipe(gulp.dest('dist/js'));
-}
-
-let _jscache;
+const _jscache = new Map;
 const taskJavascript = async () => {
-	return rollup({input: 'assets/js/index.js', format: 'iife', cache: _jscache})
-		.on('bundle', bundle => _jscache = bundle)
-		.pipe(source('bundle.js'))
-		.pipe(cache('js'))
-		.pipe(gulp.dest('dist/js'));
+	const entryPoints = await glob('assets/js/*/index.js');
+	entryPoints.forEach(ep => {
+		rollup({input: ep, format: 'iife', cache: _jscache.get(ep)})
+			.on('bundle', bundle => _jscache.set(ep, bundle))
+			.pipe(source(ep.split('/js/').pop().split('/index').shift() + '.js'))
+			.pipe(cache('js'))
+			.pipe(gulp.dest('dist/js'));
+	});
 }
 
 exports.default = gulp.parallel(
@@ -131,8 +129,7 @@ exports.default = gulp.parallel(
 	taskStaticAssets, 
 	taskJavascript,
 	taskMainPage,
-	taskIndexPage,
-	taskIndexRedirJs
+	taskIndexPage
 );
 
 exports.watch = () => gulp.watch(['assets/**', 'projects/**/*.yaml', 'views/**/*.pug'], exports.default)

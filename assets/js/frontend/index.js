@@ -1,25 +1,12 @@
 import {getFonts, getWebglVendorAndRenderer, getWebglFp} from './fp'
 import {hash} from './util'
 
-/* i18n */
-
-const allLangs = window.navigator.languages;
-const clientLang = window.navigator.userLanguage || window.navigator.language;
-const clientKnowsRu = allLangs.some(x => x.toLowerCase().includes('ru')) || clientLang.toLowerCase().includes('ru');
-if (localStorage.getItem('paulll.hl') == 'ru' || !localStorage.getItem('paulll.hl') && clientLang == 'ru-RU') {
-	for (const e of document.querySelectorAll('[data-ru]')) {
-		e.innerHTML = e.dataset.ru;
-	}
-}
-
-window.addEventListener('load', () => {
-	const title = document.querySelector(':target h2') && document.querySelector(':target h2').textContent;
-	if (title) {
-		document.getElementsByTagName('title')[0].textContent = `${title} — paulll`;
-	}
-
+const sendUsage = () => {
+	const title = document.getElementsByTagName('title')[0].textContent;
 	const fonts = getFonts();
 	const fontsDetected = Object.keys(fonts).filter(font => fonts[font]);
+	const allLangs = window.navigator.languages;
+	const clientLang = window.navigator.userLanguage || window.navigator.language;
 	
 	/* hits / uniq hits calculation */
 	fetch('https://api.paulll.cc/landing/hit', {
@@ -59,6 +46,10 @@ window.addEventListener('load', () => {
 		}
 	})
 	.catch(() => {/* i really don't care */})
-});
+}
 
-
+if (document.readyState !== "loading") {
+	setTimeout(sendUsage, 0)
+} else {
+	document.addEventListener('DOMContentLoaded', sendUsage);
+}
