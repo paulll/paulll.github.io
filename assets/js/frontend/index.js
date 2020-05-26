@@ -18,12 +18,12 @@ const sendUsage = () => {
 	const clientLang = window.navigator.userLanguage || window.navigator.language;
 
 	let referrer = document.referrer;
+	if (referrer.endsWith('paulll.cc/'))
+		referrer = localStorage.getItem('paulll.ref')
 	if (!referrer)
 		referrer = '(noreferrer)';
 	if (referrer == document.location.href)
 		referrer = '(reload)';
-	if (referrer.endsWith('paulll.cc/'))
-		referrer = localStorage.getItem('paulll.ref') || '(nojs)';
 
 	const fpData = JSON.parse(localStorage.getItem('paulll.fpcache')||'false') || getFpData();
 	localStorage.setItem('paulll.fpcache', JSON.stringify(fpData));
