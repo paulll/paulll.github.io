@@ -8,10 +8,11 @@ html, body
 	font-size 0.9rem
 	
 @font-face {
-	src: url('/fonts/DejaVuSansMono.ttf')
 	font-family: 'DejaVu Sans Mono'
+ 	src: url('/fonts/DejaVuSansMono-subset.woff2') format("woff2"), url('/fonts/DejaVuSansMono-subset.zopfli.woff') format("woff"), url('/fonts/DejaVuSansMono-subset.ttf') format("truetype");
+	unicode-range: U+9,U+A,U+20-7E,U+401,U+410-44F,U+451
+	font-display: swap
 }
-	
 
 @media screen and (min-width:801px)
 	html, body
