@@ -10,10 +10,12 @@ const Vinyl = require('vinyl');
 const postcss = require('gulp-postcss');
 const pug = require('pug');
 const cssnano = require('cssnano');
-const rollup = require('rollup-stream');
+const rollup = require('@rollup/stream');
 const source = require('vinyl-source-stream');
 const glob = require('fast-glob');
+const terser  = require('gulp-terser');
 const { Readable } = require('stream');
+const buffer = require('vinyl-buffer');
 
 // util
 const _cacheChange = {};
@@ -115,10 +117,13 @@ const _jscache = new Map;
 const taskJavascript = async () => {
 	const entryPoints = await glob('assets/js/*/index.js');
 	entryPoints.forEach(ep => {
-		rollup({input: ep, format: 'iife', cache: _jscache.get(ep)})
+		rollup({input: ep, output: {format: 'iife'}, cache: _jscache.get(ep)})
 			.on('bundle', bundle => _jscache.set(ep, bundle))
 			.pipe(source(ep.split('/js/').pop().split('/index').shift() + '.js'))
 			.pipe(cache('js'))
+			.pipe(buffer())
+			.pipe(terser())
+			.on('error', console.log.bind(console))
 			.pipe(gulp.dest('dist/js'));
 	});
 }
