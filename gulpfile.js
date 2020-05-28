@@ -28,10 +28,16 @@ const cacheChange = async (forceCache, filename, fn) => {
 
 // tasks
 const taskProjectsPages = async () => {
-	const projectTemplate = await cacheChange(false, `${__dirname}/views/projects.pug`, data => {
-		delete cache.caches['projects@details'];
-		return pug.compile(data)
-	})
+	const [projectTemplate, {categories}] = await Promise.all([
+		cacheChange(false, `${__dirname}/views/projects.pug`, data => {
+			delete cache.caches['projects@details'];
+			return pug.compile(data)
+		}),
+		cacheChange(false, `${__dirname}/projects/categories.yaml`, data => {
+			delete cache.caches['projects@details'];
+			return yaml.parse(data);
+		})
+	])
 
 	return gulp.src('projects/*/*.yaml')
 		.pipe(cache('projects@details'))
@@ -40,10 +46,13 @@ const taskProjectsPages = async () => {
 			file.base = `${__dirname}/projects/`;
 			for (const hl of Object.keys(root.i18n)) {
 				const data = Object.assign({}, root, root.i18n[hl]);
-				data.description = data.description.split('\n').map(x=>`<p>${x}</p>`).join('');
+				const category_path = file.relative.split('/').slice(-2,-1)[0];
+				data.category = categories.find(x => x.path == category_path).i18n[hl];
+				data.canonical_url = `https://paulll.cc/${hl}/${file.relative.slice(0, -file.extname.length)}.html`;
+				data.description = data.description.split('\n').map(x=>`<p>${x}</p>`).join(''); 
 				this.push(new Vinyl({
-					contents: Buffer.from(projectTemplate({ project: data })),
-					path: `${__dirname}/${hl}/${file.relative.slice(0, -file.extname.length)}.html`
+					contents: Buffer.from(projectTemplate({ project: data, hl })),
+					path: `${__dirname}/${hl}/${category_path}/${file.stem}.html`
 				}));
 			}
 			cb()
@@ -60,6 +69,7 @@ const taskMainPage = async () => {
 			return pug.compile(data)
 		}),
 		cacheChange(false, `${__dirname}/projects/categories.yaml`, data => {
+			delete cache.caches['projects@details'];
 			return yaml.parse(data);
 		}),
 		glob('projects/*/*.yaml').then(x => 
