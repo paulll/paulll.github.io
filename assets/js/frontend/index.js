@@ -1,17 +1,25 @@
 import {getFonts, getWebglVendorAndRenderer, getWebglFp} from './fp'
 import {hash} from './util'
 
-const getFpData = () => {
-	const fonts = getFonts();
-	const fontsDetected = Object.keys(fonts).filter(font => fonts[font]);
-	return {
-		fontsDetected,
-		webgl: hash(JSON.stringify(getWebglFp())),
-		webglRenderer: getWebglVendorAndRenderer()
+const getFpData = async () => {
+	const calculateFpData = () => {
+		const fonts = getFonts();
+		const fontsDetected = Object.keys(fonts).filter(font => fonts[font]);
+		return {
+			fontsDetected,
+			webgl: hash(JSON.stringify(getWebglFp())),
+			webglRenderer: getWebglVendorAndRenderer()
+		}
 	}
+
+	if (document.readyState == 'complete')
+		return calculateFpData();
+	return new Promise(cb => {
+		document.addEventListener('load', () => cb(calculateFpData()));
+	});
 }
 
-const sendUsage = () => {
+const sendUsage = async () => {
 	const title = document.getElementsByTagName('title')[0].textContent;
 	
 	const allLangs = window.navigator.languages;
@@ -25,7 +33,7 @@ const sendUsage = () => {
 	if (referrer == document.location.href)
 		referrer = '(reload)';
 
-	const fpData = JSON.parse(localStorage.getItem('paulll.fpcache')||'false') || getFpData();
+	const fpData = JSON.parse(localStorage.getItem('paulll.fpcache')||'false') || await getFpData();
 	localStorage.setItem('paulll.fpcache', JSON.stringify(fpData));
 
 	/* hits / uniq hits calculation */
