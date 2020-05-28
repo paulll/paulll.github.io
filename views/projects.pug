@@ -29,7 +29,8 @@ html(lang=hl prefix="og: http://ogp.me/ns#")
 		each technology in project.technologies
 			meta(property="article:tag" content=technology)
 		title !{project.name} — paulll
-		meta(name="robots" content="noindex, nofollow, nosnippet")
+		if project.license == 'Private'
+			meta(name="robots" content="noindex, nofollow, nosnippet")
 	body
 		.content
 			.block
