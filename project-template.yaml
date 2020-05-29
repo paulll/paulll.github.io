@@ -1,0 +1,50 @@
+# For web applications / services: project instance link
+# For native apps: download link (builds page, market page, or something) 
+deployment: https://
+
+# Source code. Git repo url in most cases
+source: https://github.com/paulll/
+
+# 'Private' for private
+# otherwise, license name
+license: Private
+
+# Used technologies list
+# Like [c++, boost, opencv]
+technologies: []
+
+# Internal meta tags(flags). Existing tags:
+# - done 
+# - private
+# - requested
+# - abandoned
+# - obsolete
+# - to-publish 
+# - acados
+# - lib
+# - cringe
+tags: []
+
+# Image for OGP previews
+# If not set, defaults to below
+image: 'https://paulll.cc/ogp-splash.png'
+
+# Sorting priority in project list
+awesomeness: 0
+
+i18n:
+  ru:
+    # Project title
+    name: 
+    
+    # For the link preview (meta description)
+    short: 
+
+    # Page data (html-formatted)
+    description: >
+      
+  en:
+    name: 
+    short: 
+    description: >
+      
