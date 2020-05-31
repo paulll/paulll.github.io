@@ -134,7 +134,7 @@ const taskSitemap = async () => {
 				changefreq: 'daily',
 				priority: 0.5,
 				lastmod: project.mtime,
-				links: langs.filter(x=>x!=hl).map(lang=>({lang, url: `https://paulll.cc/${lang}/${name}`}))
+				links: langs.filter(x=>x!=hl).map(lang=>({lang, url: `https://paulll.cc/${lang}${name}`}))
 			}
 		})
 	}).flat();
