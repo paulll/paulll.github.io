@@ -117,8 +117,10 @@ const taskSitemap = async () => {
 	const projects = await glob('projects/*/*.yaml').then(x => 
 		Promise.all(x.map(async (file) => ({
 			file, 
-			mtime: await getLastChangeDate(file)
+			mtime: await getLastChangeDate(file),
+			data: yaml.parse(await fs.readFile(file, {encoding: 'utf-8'}))
 		})))
+		.filter( x => x.data.license.toLoverCase() != 'private' && !x.data.tags.includes('private'))
 	);
 	const lastmod = await getLastChangeDate('.');
 	const langs = ['en', 'ru'];
