@@ -29,12 +29,6 @@ const cacheChange = async (forceCache, filename, fn) => {
 	return _cacheChange[filename].computed;
 }
 
-const once = (fn) => {
-	let done = 0;
-	if (!done++) 
-		return fn();
-}
-
 // tasks
 const taskProjectsPages = async () => {
 	const [projectTemplate, {categories}] = await Promise.all([
@@ -111,17 +105,24 @@ const taskMainPage = async () => {
 		.pipe(gulp.dest('dist'))
 }
 
+let _sitemapGenerated = 0;
 const taskSitemap = async () => {
+	if (_sitemapGenerated++)
+		return;
+
 	const git = Git(__dirname);
 	const getLastChangeDate = async (file) => new Date( (await git.log(['-1', file])).latest.date )
-	const projects = await glob('projects/*/*.yaml').then(x => 
+	const projects = await glob('projects/*/*.yaml')
+	.then(x => 
 		Promise.all(x.map(async (file) => ({
 			file, 
 			mtime: await getLastChangeDate(file),
 			data: yaml.parse(await fs.readFile(file, {encoding: 'utf-8'}))
 		})))
-		.filter( x => x.data.license.toLoverCase() != 'private' && !x.data.tags.includes('private'))
-	);
+	)
+	.then(x => 
+		x.filter( x => (x.data.license||'private').toLowerCase() != 'private' && !x.data.tags.includes('private')));
+	
 	const lastmod = await getLastChangeDate('.');
 	const langs = ['en', 'ru'];
 	
@@ -197,7 +198,7 @@ exports.default = gulp.parallel(
 	taskJavascript,
 	taskMainPage,
 	taskIndexPage,
-	once(taskSitemap)
+	taskSitemap
 );
 
 exports.watch = () => gulp.watch(['assets/**', 'projects/**/*.yaml', 'views/**/*.pug'], exports.default)
