@@ -27,6 +27,8 @@
     "gulp-terser": "^1.2.0",
     "pug": "^2.0.4",
     "rollup": "^2.10.9",
+    "simple-git": "^2.5.0",
+    "sitemap": "^6.1.5",
     "through2": "^3.0.1",
     "vinyl": "^2.2.0",
     "vinyl-buffer": "^1.0.1",

@@ -1,5 +1,6 @@
 const yaml = require('yaml');
 const fs = require('fs/promises');
+const fsraw = require('fs');
 const path = require('path');
 const gulp = require('gulp');
 const through2 = require('through2');
@@ -16,6 +17,8 @@ const glob = require('fast-glob');
 const terser  = require('gulp-terser');
 const { Readable } = require('stream');
 const buffer = require('vinyl-buffer');
+const Git = require('simple-git/promise');
+const sitemap = require('sitemap');
 
 // util
 const _cacheChange = {};
@@ -24,7 +27,13 @@ const cacheChange = async (forceCache, filename, fn) => {
 	if (_cacheChange[filename]?.raw != fileData && !forceCache)
 		_cacheChange[filename] = {raw: fileData, computed: fn(fileData)};
 	return _cacheChange[filename].computed;
-} 
+}
+
+const once = (fn) => {
+	let done = 0;
+	if (!done++) 
+		return fn();
+}
 
 // tasks
 const taskProjectsPages = async () => {
@@ -102,6 +111,47 @@ const taskMainPage = async () => {
 		.pipe(gulp.dest('dist'))
 }
 
+const taskSitemap = async () => {
+	const git = Git(__dirname);
+	const getLastChangeDate = async (file) => new Date( (await git.log(['-1', file])).latest.date )
+	const projects = await glob('projects/*/*.yaml').then(x => 
+		Promise.all(x.map(async (file) => ({
+			file, 
+			mtime: await getLastChangeDate(file)
+		})))
+	);
+	const lastmod = await getLastChangeDate('.');
+	const langs = ['en', 'ru'];
+	
+	const projectPages = langs.map( hl => {
+		return projects.map( project => {
+			const name = project.file.slice('projects'.length).slice(0,-'.yaml'.length) + '.html';
+			return {
+				url: hl + name,
+				changefreq: 'daily',
+				priority: 0.5,
+				lastmod: project.mtime,
+				links: langs.filter(x=>x!=hl).map(lang=>({lang, url: `https://paulll.cc/${lang}/${name}`}))
+			}
+		})
+	}).flat();
+
+	const systemPages = [
+		'/',
+		'/ru/',
+		'/en/'
+	];
+
+	const pages = [
+		...projectPages,
+		...systemPages.map(url => ({url, changefreq: 'daily', priority: 0.9, lastmod }))
+	];
+
+	Readable.from(pages)
+		.pipe(new sitemap.SitemapStream({hostname: 'https://paulll.cc'}))
+		.pipe(fsraw.createWriteStream('dist/sitemap.xml'));
+}
+
 const taskIndexPage = async () => {
 	return gulp.src('views/index.pug')
 		.pipe(cache('index'))
@@ -141,10 +191,11 @@ const taskJavascript = async () => {
 exports.default = gulp.parallel(
 	taskProjectsPages, 
 	taskStylusStyles,
-	taskStaticAssets, 
+	taskStaticAssets,
 	taskJavascript,
 	taskMainPage,
-	taskIndexPage
+	taskIndexPage,
+	once(taskSitemap)
 );
 
 exports.watch = () => gulp.watch(['assets/**', 'projects/**/*.yaml', 'views/**/*.pug'], exports.default)
