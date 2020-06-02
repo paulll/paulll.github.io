@@ -7,7 +7,7 @@ awesomeness: 50
 i18n:
   ru:
     name: Эмулятор BIOS
-    short: 
+    short: Эмулятор настроек BIOS со встроенной справкой
     description: >
       Одна тня попросила сделать ей такую курсовую (а-ля графическая справка для настроек CMOS/BIOS), 
       и вот что из этого получилось. Эмулятор меню настроек CMOS(BIOS) в браузере, с редактируемым 
@@ -23,7 +23,7 @@ i18n:
       <center><i>Как-то так</i></center>
   en:
     name: BIOS Emulator
-    short: cmos setup utilily emulator 
+    short: BIOS setup utilily emulator with in-place manual 
     description: >
       One girl asked me to do her course work, so that is it.
       BTW, gained nothing from this :c.
