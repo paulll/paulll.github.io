@@ -1,17 +1,23 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
+deployment: https://box.paulll.cc/s/projects/pixel/
+source: 
+license: MIT 
+technologies: [js, stylus]
+tags: [abandoned]
 awesomeness: 0
 i18n:
   ru:
-    name: 
-    short: 
+    name: Редактор пиксель-артов
+    short: Заброшенный проект редактора пиксельных изображений в браузере
     description: >
-      
+      Редактор пиксельных изображений в браузере. Задумывался для перерисовки в пиксельном стиле 
+      с фотографий / изображений, которые клались на фоновый слой. С этой ролью бы справился и 
+      любой графический редактор с поддержкой слоёв, но задача была сделать таковое без необходимости
+      установки или использования плагинов типа флеша (тогда сгодился бы старый pixlr).
   en:
-    name: 
-    short: 
+    name: Pixel Art editor
+    short: Abandoned in-browser pixel art editor project
     description: >
+      Pixel image editor in the browser. It was intended for redrawing photos/imaes in pixel style,
+      by placing them on the background layer. Almost any graphic editor allows you to do so, but
+      the task was to make one without the need installing anything or using adobe flash (then the old pixlr would do).
       
