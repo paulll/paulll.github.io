@@ -76,9 +76,14 @@ const taskMainPage = async () => {
 			return yaml.parse(data);
 		}),
 		glob('projects/*/*.yaml').then(x => 
-			Promise.all(x.map(async (file) => 
-				Object.assign({file}, yaml.parse(await fs.readFile(file, {encoding: 'utf-8'})))
-			))
+			Promise.all(x.map(async (file) => {
+				try {
+					return Object.assign({file}, yaml.parse(await fs.readFile(file, {encoding: 'utf-8'})))
+				} catch (e) {
+					console.log(`Error with project file: ${file}`, e.toString());
+					throw e;
+				}
+			}))
 		)
 	]);
 
