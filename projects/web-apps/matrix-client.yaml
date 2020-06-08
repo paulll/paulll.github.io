@@ -1,17 +1,41 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
+deployment:
+source: 
+license: Private
+technologies: [js, pug, stylus, matrix]
+tags: [abandoned]
 awesomeness: 0
 i18n:
   ru:
-    name: 
-    short: 
+    name: Клиент Matrix
+    short: Заброшенный проект браузерного клиента для Matrix, в стиле телеграма
     description: >
-      
+      Проект заброшен и не был завершен, но стал основой для никому не нужного <a href="k732gram.html">k732gram</a>. 
+      В определенной степени копировал интерфейс <code>telegram-desktop</code>, разве что со вкладками,
+      которые появились в телеграме уже только лишь в 2020 году. Напомню, <a href="https://matrix.org">Matrix</a>
+      - децентрализованный (федеративный) мессенджер а-ля jabber/xmpp, только менее фрагментированный от изобилия расширений.
+
+      <picture>
+        <source srcset="/images/k732gram.webp" type="image/webp">
+        <source srcset="/images/k732gram.jpg" type="image/jpeg">
+        <img src="/images/k732gram.jpg" alt="Скрин уже в виде k732gram">
+      </picture>
+      <center><i>Так выглядит k732gram</i></center>
+
+      Скринов самого проекта не сохранилось, визуальное отличие там в панели слева и больше походит на телеграм.
   en:
-    name: 
-    short: 
+    name: Matrix Client
+    short: Abandoned project for the Matrix browser client with telegram-like user interface.
     description: >
-      
+      The project was abandoned and forked into the <a href="k732gram.html">k732gram</a>. 
+      Almost copied <code>telegram-desktop</code> UI, but with folders/tabs,
+      that appeared in telegram much later in 2020.
+
+      <picture>
+        <source srcset="/images/k732gram.webp" type="image/webp">
+        <source srcset="/images/k732gram.jpg" type="image/jpeg">
+        <img src="/images/k732gram.jpg" alt="k732gram screenshot">
+      </picture>
+      <center><i>k732gram look</i></center>
+
+      No screenshots for the project. It differs with k732gram in sidebar (chat list), that is more telegram-like in
+      this project.
