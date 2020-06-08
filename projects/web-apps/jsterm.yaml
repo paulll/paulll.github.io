@@ -1,17 +1,22 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://paulll.cc/jsterm/main.html
+source: https://github.com/paulll/jsterm
+license: MIT
+technologies: [js]
+tags: [done, obsolete, private]
+awesomeness: 1
 i18n:
   ru:
-    name: 
-    short: 
+    name: jsterm
+    short: Эмулятор терминала и командный инерпретатор в браузере. Компонент Cloudx OS, в общем древняя штука времен когда я начинал программировать
     description: >
-      
+      Эмулятор терминала и командный интерпретатор в браузере.
+      Компонент Cloudx OS, в общем древняя штука времен когда я лишь начинал программировать.
+      Умеет в пайпы (||), переменные, многоязычность и всякие мелочи.
+      Не похож на bash и вообще специфичен для своей среды. 
   en:
-    name: 
-    short: 
+    name: jsterm
+    short: Terminal emulator and command interpreter in browser. Cloudx OS component, one of my very first programs. 
     description: >
+      Terminal emulator and command interpreter in browser. Cloudx OS component, one of my very first programs.
+      Completely different from bash, that's just simple command-line interpreter with variables, pipes and multilang support.
       
