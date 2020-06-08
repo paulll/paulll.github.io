@@ -6,7 +6,7 @@ tags: [done]
 awesomeness: 10
 i18n:
   ru:
-    name: Cloudx
+    name: Cloudx OS
     short: Веб-ОС
     description: >
       Один из первых сохранившихся проектов. «Облачная» операционная система, 
@@ -27,7 +27,7 @@ i18n:
 
       Бэкэнд на php, и отвечал он только за хранение файлов. Там ничего интересного. 
   en:
-    name: Cloudx
+    name: Cloudx OS
     short: Web-OS
     description: >
       One of my very first projects. Cloud (web) operating system, based on iframe applications
