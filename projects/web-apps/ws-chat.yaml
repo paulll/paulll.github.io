@@ -1,17 +1,22 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: https://box.paulll.cc/s/projects/chat/main.html
+source: 
+license: MIT
+technologies: [js, mongodb]
+tags: [done]
+awesomeness: 11
 i18n:
   ru:
-    name: 
-    short: 
+    name: Чат на node.js
+    short: Чат из моей старой (2013 год) публикации на Хабре
     description: >
-      
+      Чат на вебсокетах <a href="https://habr.com/ru/post/200866/">и моя первая публикация на Хабре</a>.
+      Не судите строго, мне было всего 14 лет на тот момент.
+
+      Должно работать и сейчас, по идее. 
   en:
-    name: 
-    short: 
+    name: Chat on node.js
+    short: Chat from my old (2013) habr.com publication
     description: >
+      Websockets+node.js chat from my very first <a href="https://habr.com/ru/post/200866/">publication</a>.
+      I was only 14 yo, so go easy on me.
       
