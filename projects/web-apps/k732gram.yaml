@@ -1,17 +1,65 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: 
+source: https://github.com/paulll/k732gram
+license: MIT
+technologies: [python, django, centrifugo, docker, docker-compose, pug, stylus]
+tags: [done, acados, requested, private] # 'private' to exclude from search engine indexing
+awesomeness: 20
 i18n:
   ru:
-    name: 
-    short: 
+    name: k732gram
+    short: Внутренний мессенджер на Django, попросили - сделал. 
     description: >
+      Внутренний мессенджер на Django. Из интересных фишек: для сообщения в конференции виден список прочитавших.
+      Сделано по запросу, иначе бы я не стал подобное творить на django. Впрочем, довольно неплохо работает благодаря Centrifugo.
+      <picture>
+        <source srcset="/images/k732gram.webp" type="image/webp">
+        <source srcset="/images/k732gram.jpg" type="image/jpeg">
+        <img src="/images/k732gram.jpg" alt="Интерфейс k732gram">
+      </picture>
+      <center><i>Интерфейс k732gram</i></center>
       
-  en:
-    name: 
-    short: 
+      <h4>Как устроено</h4>
+      
+      Django сам по себе заточен под запросно-ответную архитектуру, и рассылка сообщений в нее не укладывается. 
+      Но задача была сделать на Django, для дальнейшей интеграции с другими внутренними сервисами, так что пришлось
+      искать выход в виде Centrifugo. Фактически, это pub/sub сервер с поддержкой websocket-соединений, контролем 
+      доступа к топикам по JWT-токенам и простым api. В принципе, там куда больше фишек, но я перечислил именно
+      задейстованные в данном конкретном случае.
+      
+      <picture>
+        <source srcset="/images/centrifugo.webp" type="image/webp">
+        <source srcset="/images/centrifugo.png" type="image/png">
+        <img src="/images/centrifugo.png" alt="Схема рассылки мгновенных сообщений">
+      </picture>
+      <center><i>Схема рассылки мгновенных сообщений</i></center>
+
+      При заходе пользователя в чат, сервер проверяет его права, и при наличии таковых выдает ему JWT-токен с
+      правами на подписку на соответствующий чату pub/sub топик. При поступлении сообщения от пользователя, 
+      бэкэнд сохраняет его в базу данных и отправляет событие нового сообщения на сервер Centrifugo, который
+      затем рассылает его всем подписанным клиентам. 
+  en: 
+    name: k732gram
+    short: Internal messenger on Django 
     description: >
-      
+      Internal messenger on Django. Features: ability to get list of people who read the message.
+      Powered by Centrifugo. 
+
+      <picture>
+        <source srcset="/images/k732gram.webp" type="image/webp">
+        <source srcset="/images/k732gram.jpg" type="image/jpeg">
+        <img src="/images/k732gram.jpg" alt="k732gram UI">
+      </picture>
+      <center><i>k732gram UI</i></center>
+
+      Django is designed to handle stateless requests, not stateful sockets. Instant messaging doesn't fit
+      into that design. We need a pub/sub service to deal with instant message notifications, and Centrifugo is
+      the one, because it's designed as a user-facing pub/sub server just like we need. 
+      Another options are long/short polling, but they're not as effective.  
+
+      <picture>
+        <source srcset="/images/centrifugo.webp" type="image/webp">
+        <source srcset="/images/centrifugo.png" type="image/png">
+        <img src="/images/centrifugo.png" alt="Instant messaging scheme">
+      </picture>
+      <center><i>Instant messaging scheme</i></center>
+
