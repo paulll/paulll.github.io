@@ -1,17 +1,94 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment: 
+source: https://gist.github.com/paulll/0d7b59bd609a2b937e4bd075d7f96217
+license: MIT
+technologies: [c++, qset, esolang, ctf]
+tags: [done, ctf]
+awesomeness: 15
 i18n:
   ru:
-    name: 
-    short: 
-    description: >
+    name: Интерпретатор QSet
+    short: Интерпретатор эзотерического языка программирования из таска на ABCTF-2016. 
+    description: |
+      QSet - эзотерический язык программирования из таска на ABCTF-2016.
+      Программа на нём представляет собой последовательноть пар списков символов.
       
+      Формальный синтаксис:
+
+      ```abnf
+      symbol = ALPHA
+      multiset = symbol / symbol " " multiset
+      instruction = multiset "|" multiset
+      program = instruction / instruction "\n" program
+      ```
+
+      Семантика:
+
+      ```py
+      multiset<symbol> state = input
+      while True:
+        for (L, R) : (multiset<symbol>, multiset<symbol>) in program:
+          if R ⊆ S:
+            state = state - R + L
+            break
+        if state is not modified:
+          break
+      multiset<symbol> output = state
+      ```
+
+      Вход и выход - конечные последовательности натуральных чисел.
+      Символы `i0`, `i1` и т.д. содержат входную последовательноть, 
+      а символы `o0`, `o1`, ... используются для вывода. 
+
+      ## Об этом проекте
+      Просто интерптератор для интересного, на мой взгляд, эзотерического языка.
+      Сделано just4fun пока мне было нечем заняться на паре. Кстати, этот таск на
+      CTF я решил написав оптимизирующий компилятор специального недоязыка в QSet,
+      но если я буду еще и райтапы в проектах тут расписывать, сайт просто утонет
+      в контенте. 
+
+      ## Примечания 
+      
+      * [Референсный интерпретатор](https://github.com/shiltemann/CTF-writeups-public/blob/master/ABCTF-2016/writeupfiles/qset_interpreter.py)
+      * [Райтап](https://kimiyuki.net/writeup/ctf/2016/abctf-2016/#qset-1---100)
+      * [Другой райтап](https://sharpc.livejournal.com/98094.html) (тоже не мой, но на русском)
   en:
-    name: 
-    short: 
-    description: >
-      
+    name: QSet interpreter
+    short: QSet is an esoteric programming language from the ABCTF-2016 challenge.
+    description: |
+      QSet is an esoteric programming language from the ABCTF-2016 challenge.
+      The program is a sequence of pairs of symbol lists. The syntax is:
+
+      ```abnf
+      symbol = ALPHA
+      multiset = symbol / symbol " " multiset
+      instruction = multiset "|" multiset
+      program = instruction / instruction "\n" program
+      ```
+
+      The semantic is like:
+
+      ```py
+      multiset<symbol> state = input
+      while True:
+        for (L, R) : (multiset<symbol>, multiset<symbol>) in program:
+          if R ⊆ S:
+            state = state - R + L
+            break
+        if state is not modified:
+          break
+      multiset<symbol> output = state
+      ```
+
+      Both input and output are finite sequences of positive integers.
+      Symbols `i0`, `i1`, `i2` and so on are pre-defined with input sequence 
+      Symbols `o0`, `o1` and so on are used for output.
+
+      ## About the project itself
+      Just an interpreter for such an interesting language. Made just for fun.
+      By the way, I've solved that CTF challenge by writing a specific optimizing
+      compiler which compiles programs into the QSet code.  
+
+      ## References
+
+      * [Reference implementation](https://github.com/shiltemann/CTF-writeups-public/blob/master/ABCTF-2016/writeupfiles/qset_interpreter.py)
+      * [Challenge Writeup](https://kimiyuki.net/writeup/ctf/2016/abctf-2016/#qset-1---100) (not mine)
