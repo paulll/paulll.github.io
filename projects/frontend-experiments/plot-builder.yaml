@@ -8,13 +8,13 @@ i18n:
   ru:
     name: Рисовалка Графиков
     short: Простая рисовалка двумерных графиков
-    description: >
+    description: |
       Ну, приятный интерфейс, но ничего умного там нет. 
       Canvas, без сторонних библиотек. Код времен Chrome 33
   en:
     name: Simple Plot Builder
     short: Simpele 2D plot builder
-    description: >
+    description: |
       Nice UI, but nothing else. 
       Canvas, no dependencies. Chrome v33 age
       

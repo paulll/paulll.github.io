@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Текст и визуализация
     short: Эксперимент со звуком в браузере
-    description: >
+    description: |
       Визуализация и синхронизированный текст трека. Эксперимент с AudioContext API
 
       Важно! В новых браузерах нужно куда-нибудь кликнуть чтобы был звук, и, возможно,
@@ -18,7 +18,7 @@ i18n:
   en:
     name: Lyrics & Visualization
     short: AudioContext API Experiment
-    description: >
+    description: |
       Synchronized lyrics and visualization. Experiment with AudioContext API
 
       Important! Modern browsers don't allow sound autoplay, so you have to click

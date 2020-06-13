@@ -19,6 +19,31 @@ const { Readable } = require('stream');
 const buffer = require('vinyl-buffer');
 const Git = require('simple-git/promise');
 const sitemap = require('sitemap');
+const hljs = require('highlight.js');
+const implicitFigures = require('markdown-it-implicit-figures');
+
+// markdown
+const md = require('markdown-it')({
+	html: true,
+	linkify: true,
+	quotes: "«»„“",
+	typographer: true,
+	breaks: false,
+	highlight(str, lang) {
+		if (lang && hljs.getLanguage(lang)) {
+			try {
+				return hljs.highlight(lang, str).value;
+			} catch (e) {
+				console.log(e);
+			}
+		}
+		return ''; // use external default escaping
+	}
+});
+
+md.use(implicitFigures, {
+	figcaption: true
+});
 
 // util
 const _cacheChange = {};
@@ -52,7 +77,9 @@ const taskProjectsPages = async () => {
 				const category_path = file.relative.split('/').slice(-2,-1)[0];
 				data.category = categories.find(x => x.path == category_path).i18n[hl];
 				data.canonical_url = `https://paulll.cc/${hl}/${file.relative.slice(0, -file.extname.length)}.html`;
-				data.description = data.description.split('\n').map(x=>`<p>${x}</p>`).join(''); 
+				data.description = md.render(data.description);
+				//data.description = data.description.split('\n').map(x=>`<p>${x}</p>`).join(''); 
+				//data.description = data.description.replace(/<code>.*?<\/code>/gmi, x => x.replace(/<p>(.*?)<\/p>/gmi, '$1'))
 				this.push(new Vinyl({
 					contents: Buffer.from(projectTemplate({ project: data, hl })),
 					path: `${__dirname}/${hl}/${category_path}/${file.stem}.html`

@@ -8,7 +8,7 @@ i18n:
   ru:
     name: '@ffdbcheckbot'
     short: Проверка на утечку в Вконтакте
-    description: >
+    description: |
       <h4>Только не пускайте слюни, всё это уже не актуально</h4>
 
       Бот, который проверял наличие человека или его друзей в утечке какого-то там Контакта,
@@ -46,7 +46,7 @@ i18n:
   en:
     name: '@ffdbcheckbot'
     short: Query the vk.com leak database
-    description: >
+    description: |
       <h4>The information below is no longer actual</h4>
 
       Telegram bot, that checks given user and his friends in vk leak database, and if

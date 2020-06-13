@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Graphite
     short: Платформа для анализа социального графа
-    description: >
+    description: |
       Внимание! Проект на стадии активной разработки. 
       На текущий момент нет публичных инстансов, а само приложение не предназначено для 
       запуска standalone, в отличие от его предшественников. На данный момент лучше использовать
@@ -24,7 +24,7 @@ i18n:
   en:
     name: Graphite 
     short: Social graph analysis platform
-    description: >
+    description: |
       Attention! The project is under active development.
       There are currently no public instances, and the app itself is not intended for
       launch standalone, unlike its predecessors. At the moment it is better to use

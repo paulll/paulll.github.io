@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Shellcrypt
     short: Утилита для шифрования кода на php, когда одной лишь обфускации мало.
-    description: >
+    description: |
       Любой обфусцированный код за конечное время можно деобфусцировать обратно,
       и если очень не хочется чтобы кто-то узнал что ты запускал на его хосте,
       эта штука поможет. Идея в том что код шифруется симметричным шифром, а
@@ -20,7 +20,7 @@ i18n:
   en:
     name: Shellcrypt
     short: Utility for encrypting php code when you need something more than just obfuscation.
-    description: >
+    description: |
       Any obfuscated code can be deobfuscated back in a finite time, and if you really don't 
       want someone to find out what you ran on their host, this thing can help.
       The idea is that the code is encrypted with a symmetric cipher, and

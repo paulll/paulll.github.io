@@ -8,7 +8,7 @@ i18n:
   ru:
     name: '@thunderalertbot'
     short:  Простой бот для важных уведомлений
-    description: >
+    description: |
       Представьте что у вас есть большой (500+ участников) чат, и нередко случается
       необходимость у кого-то оповестить всех о чем-то очень важном и очень срочном.
       Отдельный чат или канал для этого не годится: люди начинают обсуждать оповещение
@@ -26,7 +26,7 @@ i18n:
   en:
     name: '@thunderalertbot'
     short: Alert notifications for groups
-    description: >
+    description: |
       The case: large group with 500+ members, and often someone has to 
       notify everyone in the chat about something very important and urgent.
       Separate chat is not a good soultion: people will discuss notifications

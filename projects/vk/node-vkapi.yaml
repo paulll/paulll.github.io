@@ -8,7 +8,7 @@ i18n:
   ru:
     name: node vkapi
     short: Быстрая и легковесная библиотека для работы с vk api
-    description: >
+    description: |
       Использую в своих проектах. 
 
       Имеет такие фишки как автоматическая умная группировка 
@@ -19,7 +19,7 @@ i18n:
   en:
     name: node vkapi
     short: Fast vk api library 
-    description: >
+    description: |
       I use it in my projects.
 
       Has such features as automatic smart grouping

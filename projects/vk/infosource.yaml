@@ -8,12 +8,12 @@ i18n:
   ru:
     name: infosource
     short: Граф распространения новостей вконтакте
-    description: >
+    description: |
       Набор утилит для получения и анализа графа новостей вконтакте. 
       Типа, кто кого репостил, кто кого копировал.
   en:
     name: infosource
     short: Vk.com information distribution graph
-    description: >
+    description: |
       A set of utilities for getting and analyzing the vk.com news graph.
       Like who reposted, who copied.

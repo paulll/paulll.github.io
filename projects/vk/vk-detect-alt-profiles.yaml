@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Деанонимайзер
     short: Поиск оригинала по фейку и наоборот
-    description: >
+    description: |
       Выдает каким-либо образом тесно связанные страницы людей,
       в особенности альтернативные страницы (фейки). Оказалась 
       <b>на удивление</b> эффективной, даже при использовании 
@@ -23,7 +23,7 @@ i18n:
   en:
     name: Deanonymizer
     short: Get real page from fake
-    description: >
+    description: |
       Displays closely related pages of people in any way,
       in particular, alternative pages (fakes). Turn out
       <b>surprisingly </b> effective, even when used

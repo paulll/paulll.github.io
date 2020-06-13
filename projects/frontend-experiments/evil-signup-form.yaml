@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Плохая Форма Авторизации
     short: И речь не о её качестве, ха-ха 
-    description: >
+    description: |
       Умеет на лету генерировать непротиворечивые требования к паролю и email'у,
       при этом "неправильные" пароли так же отправляются на сервер.
 
@@ -19,7 +19,7 @@ i18n:
   en:
     name: Evil Signup Form
     short: Evil and smart
-    description: >
+    description: |
       Password form that would generate email/password requirements dynamically, 
       forcing user to input as many different passwords as possible. 
       Even 'invalid' passwords are stored, so that pairs (email/password) coud be used for bad things.

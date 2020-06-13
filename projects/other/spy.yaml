@@ -8,7 +8,7 @@ i18n:
   ru:
     name: (μ)DLP-система
     short: Микро-DLP система
-    description: >
+    description: |
       Кустарная и маленькая DLP-система. Нагромождение из костылей и..
       других костылей, которое следило за путешествиями файлов 
       на клиентских машинах в корпоративной сети, плюс
@@ -20,7 +20,7 @@ i18n:
   en:
     name: (μ)DLP-system
     short: Micro-DLP System
-    description: >
+    description: |
       Small DLP system that logs browser history and file
       moving activity on client machines in the corporate network.
 

@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Челлендж-Бот
     short: Бот для одного челленджа
-    description: >
+    description: |
       Эм.. Суть очень кринжовая и достойна /б/, так что ограничусь 
       в описании тем, что эта штука рассчитывала рейтинг
       в определенном челлендже, по взвешенной системе, аналогично
@@ -16,7 +16,7 @@ i18n:
   en:
     name: Сhallenge
     short: Bot for one challenge 
-    description: >
+    description: |
       Very cringe thing, so no sources or any usage information.
       That thing calculated user rating in one.. competition. 
       Rating formula was inspired by the osu! <a href="https://osu.ppy.sh/help/wiki/Performance_Points">performance points</a>

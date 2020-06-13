@@ -8,12 +8,12 @@ i18n:
   ru:
     name: Тренировка bpm
     short: Для улучшения скиллов в osu!
-    description: >
+    description: |
       Тренировка для прохождения т.н. "стримов" в игре osu! 
       То есть, способности стабильно нажимать на кнопки, не 
       отклоняясь от заданного ритма.
   en:
     name: BPM training 
     short: To improve osu! skills
-    description: >
+    description: |
       Train the ability to consistently push the buttons in the given rhytm.

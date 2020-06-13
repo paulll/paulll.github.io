@@ -8,7 +8,7 @@ i18n:
   ru:
     name: undelete
     short: Антиудалялка сообщений
-    description: >
+    description: |
       Сервис что сохранял входящие сообщения, и при их удалении
       отправлял в личку сообщение с исходным содержимым удаленного 
       сообщения. 
@@ -19,7 +19,7 @@ i18n:
   en:
     name: undelete
     short: Saves deleted messages
-    description: >
+    description: |
       Service that saves your incoming messages and sends
       you a message copy when it gets removed. 
 

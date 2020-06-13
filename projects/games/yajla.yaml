@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Yajla
     short: Приложение для запоминания японской каны
-    description: >
+    description: |
       Минималистичное приложение для зубрежки каны (слоговой азбуке в японском). 
       Автоматически подстраивает сложность и частоту появления разных символов,
       учитывая всяческие малейшие факторы, так что вместо размышлений о том,
@@ -21,7 +21,7 @@ i18n:
   en:
     name: Yajla
     short: Yet Another Japanese Learing App
-    description: >
+    description: |
       A minimalistic application for memorizing kana (syllabic alphabet in Japanese).
       It automatically adjusts the complexity and frequency of different characters,
       taking into account all the smallest factors, so instead of thinking about

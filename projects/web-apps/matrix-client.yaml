@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Клиент Matrix
     short: Заброшенный проект браузерного клиента для Matrix, в стиле телеграма
-    description: >
+    description: |
       Проект заброшен и не был завершен, но стал основой для никому не нужного <a href="k732gram.html">k732gram</a>. 
       В определенной степени копировал интерфейс <code>telegram-desktop</code>, разве что со вкладками,
       которые появились в телеграме уже только лишь в 2020 году. Напомню, <a href="https://matrix.org">Matrix</a>
@@ -25,7 +25,7 @@ i18n:
   en:
     name: Matrix Client
     short: Abandoned project for the Matrix browser client with telegram-like user interface.
-    description: >
+    description: |
       The project was abandoned and forked into the <a href="k732gram.html">k732gram</a>. 
       Almost copied <code>telegram-desktop</code> UI, but with folders/tabs,
       that appeared in telegram much later in 2020.

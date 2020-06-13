@@ -8,13 +8,13 @@ i18n:
   ru:
     name: Advanced TD
     short: Расширяемая tower-defence игра
-    description: >
+    description: |
       Древний и заброшенный проект, но был весьма полезен для собственных скиллов. 
       Исходники разбросаны и затеряны, да и там хвастаться нечем.
   en:
     name: Advanced TD
     short: Extensible tower defence game
-    description: >
+    description: |
       Abandoned game project. However, it brought a lot of experience.
 
       No sources, no releases. Only project description. That's it.

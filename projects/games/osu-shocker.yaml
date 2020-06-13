@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Osu Shocker
     short: Оригинальный ассист для osu! 
-    description: >
+    description: |
       В момент, когда надо нажимать на кнопку, подает разряд в руку. 
       Не очень эффективно, но довольно весело. Так же, это мой первый опыт
       программирования на языке Julia. Исходники под саму arduino где-то затерялись,
@@ -18,7 +18,7 @@ i18n:
   en:
     name: Osu Shocker
     short: Weird osu! assistant 
-    description: >
+    description: |
       Shocks your arm with electricity when it's time to push the button in osu. 
       Not very productive thing, but fun. Also, it's my first experience
       of Julia programming. 

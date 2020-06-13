@@ -8,10 +8,10 @@ i18n:
   ru:
     name: Граф приглашений чата
     short: Граф приглашений в чате вконтакте
-    description: >
+    description: |
       
   en:
     name: Chat invite graph
     short: Graph who added whom in vk.com chat
-    description: >
+    description: |
       

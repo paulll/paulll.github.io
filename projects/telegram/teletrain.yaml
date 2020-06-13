@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Задачник
     short: Бот для тренировки алгебраических задач
-    description: >
+    description: |
       Генерирует простейшие алгебраические выражения (на подобие <code>b=x+c*a</code>) 
       и просит выразить оттуда <strong>x</strong>. Из интересного: как устроен
       контроль сложности и генерации выражений, ну и отправляет он красивые картинки 
@@ -31,7 +31,7 @@ i18n:
   en:
     name: Teletrain
     short: Bot to train solving simple algebraic equations
-    description: >
+    description: |
       Generates algebraic expressions like <code>b=x+c*a</code> and asks
       user to express <strong>x</strong>. 
 

@@ -8,9 +8,9 @@ i18n:
   ru:
     name: Загрузка почтовых вложений
     short: Cкачивает почтовые вложения с заданных ящиков
-    description: >
+    description: |
       Скачивает все вложения за указанный период времени для заданных аккаунтов. 
-      Аккаунты подаются в типичном текстовом csv-файле со строчками вида <code>login;password</code>
+      Аккаунты подаются в типичном текстовом csv-файле со строчками вида `login;password`
 
       Попросили сделать какие-то неизвестные и мутные люди, причем 
       через цепочку знакомых, и напрямую ни разу с ними не общался и не переписывался.
@@ -19,9 +19,9 @@ i18n:
   en:
     name: Download mail attachments
     short: Downloads attachments from given emails
-    description: >
+    description: |
       Just downloads email attachments for the given time period and given users
-      list. Accounts are specified in typical csv/text files (with lines like <code>login;password</code>)
+      list. Accounts are specified in typical csv/text files (with lines like `login;password`)
 
       I still don't know who asked me to do this, but i was given two invitations to Positive Hack Days 9
       for doing it, so i'm satisfied.

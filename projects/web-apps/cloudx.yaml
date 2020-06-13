@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Cloudx OS
     short: Веб-ОС
-    description: >
+    description: |
       Один из первых сохранившихся проектов. «Облачная» операционная система, 
       или что-то вроде того. Приложения запускались в iframe'ах, и молги использовать
       API системы (в частности, доступ к файлам и управление окнами) через специальную
@@ -29,7 +29,7 @@ i18n:
   en:
     name: Cloudx OS
     short: Web-OS
-    description: >
+    description: |
       One of my very first projects. Cloud (web) operating system, based on iframe applications
       with specific api (for filesystem access and window management). There was no ServiceWorkers 
       or anything like that, so now it's quite simple to implement in a few evenings.

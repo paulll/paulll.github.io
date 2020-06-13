@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Генератор личностей
     short: 
-    description: >
+    description: |
       Интересен тем что учитывает префиксы телефонных номеров, использует
       API геокодера Яндекса для получения существующих адресов в том же регионе,
       которому приналдежит номер по префиксу, и генерирует правдоподобные ники и пароли.
@@ -19,7 +19,7 @@ i18n:
   en:
     name: Identity Generator
     short: 
-    description: >
+    description: |
       Uses Yandex Geocoder API to obtain addresses that exist in real world. 
 
       API changed, so it's not working anymore. Won't fix in the near future

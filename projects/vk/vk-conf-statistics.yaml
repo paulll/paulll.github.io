@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Статистика чатов
     short: Разные статистики для чатов вконтакте
-    description: >
+    description: |
       Работает прямо в браузере, без бэкэнда.
       Рисует разные графики активности людей в чате, 
       общую активность по дням недели и часам, и всякое подобное.
@@ -28,7 +28,7 @@ i18n:
   en:
     name: Chat statistics
     short: Different statistics for vk.com chat
-    description: >
+    description: |
       Works directly in your browser, no backend.
 
       <h4>Screenshots:</h4>

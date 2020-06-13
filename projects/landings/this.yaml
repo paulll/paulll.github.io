@@ -7,7 +7,7 @@ awesomeness: 500
 i18n:
   ru:
     name: Этот сайт (рекурсия)
-    description: >
+    description: |
       У меня довольно много проектов, так что пришлось придумывать что-то для удобного обзора этой коллекции.
       Просто гитхаб или что-то такое не подходит: нет категоризации, да и список довольно долго скроллится.
       Такое удобно для фокусировке на активных проектах, но это не тот кейс. 
@@ -55,7 +55,7 @@ i18n:
 
   en:
     name: This (recursion)
-    description: >
+    description: |
       I have quite a lot of projects, so I had to come up with something for a convenient overview of this collection.
       Just github or something like that doesn't fit: there is no categorization, and scrolling it takes much time.
       This is convenient for focusing on active projects, but this is not the case.

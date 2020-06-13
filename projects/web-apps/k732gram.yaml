@@ -8,7 +8,7 @@ i18n:
   ru:
     name: k732gram
     short: Внутренний мессенджер на Django, попросили - сделал. 
-    description: >
+    description: |
       Внутренний мессенджер на Django. Из интересных фишек: для сообщения в конференции виден список прочитавших.
       Сделано по запросу, иначе бы я не стал подобное творить на django. Впрочем, довольно неплохо работает благодаря Centrifugo.
       <picture>
@@ -40,7 +40,7 @@ i18n:
   en: 
     name: k732gram
     short: Internal messenger on Django 
-    description: >
+    description: |
       Internal messenger on Django. Features: ability to get list of people who read the message.
       Powered by Centrifugo. 
 

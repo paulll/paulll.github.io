@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Graphite legacy
     short: Утилита для анализа графа друзей вконтакте
-    description: >
+    description: |
       Эттэншн! Устарело в пользу новой платформы graphite, так что больше не поддерживается.
 
       Быстрое и мощное приложения для анализа графа друзей вконтакте. 
@@ -21,7 +21,7 @@ i18n:
   en:
     name: Graphite legacy
     short: Vk.com social graph analysis utility
-    description: >
+    description: |
       Deprecated in favor of the new graphite platform. 
 
       Can handle huge social graphs (thousands of nodes), detect communities.

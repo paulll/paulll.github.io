@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Без таймеров (патч)
     short: убирает таймер с фотографий
-    description: >
+    description: |
       В обычном чате телеграма можно отправить фото с таймером. Оно сгорит
       через заданное время после прочтения, и его невозможно заскринить. 
 
@@ -26,7 +26,7 @@ i18n:
   en:
     name: No TTL patch
     short: shows self-destructing photos as normal ones
-    description: >
+    description: |
       You can send self-destructing photo in basic Telegram chats (even not private/encryped ones)
 
       That patch sets <code>ttl</code> field to zero for each incoming media,

@@ -8,7 +8,7 @@ i18n:
   ru:
     name: jsterm
     short: Эмулятор терминала и командный инерпретатор в браузере. Компонент Cloudx OS, в общем древняя штука времен когда я начинал программировать
-    description: >
+    description: |
       Эмулятор терминала и командный интерпретатор в браузере.
       Компонент Cloudx OS, в общем древняя штука времен когда я лишь начинал программировать.
       Умеет в пайпы (||), переменные, многоязычность и всякие мелочи.
@@ -16,7 +16,7 @@ i18n:
   en:
     name: jsterm
     short: Terminal emulator and command interpreter in browser. Cloudx OS component, one of my very first programs. 
-    description: >
+    description: |
       Terminal emulator and command interpreter in browser. Cloudx OS component, one of my very first programs.
       Completely different from bash, that's just simple command-line interpreter with variables, pipes and multilang support.
       

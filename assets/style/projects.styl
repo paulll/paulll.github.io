@@ -40,14 +40,27 @@ body
 	display flex
 	justify-content center 
 
-h1 
-	font-size 5em
-	font-family 'Roboto Slab'
-	font-weight 400
-
 a
 	display inline-block
 	color white
+
+figcaption
+	text-align center
+	font-style italic
+
+code
+	padding 0 0.25em
+pre code
+	padding 0	
+pre, code
+	font-family 'DejaVu Sans Mono', monospace
+	background-color #eeeeee	
+pre
+	box-sizing border-box
+	overflow overlay
+	padding 1em
+	margin 0
+	font-size 1rem
 
 #footer
 	position absolute
@@ -64,9 +77,10 @@ a
 		
 	.block
 		padding 4em 0
-		h2
+		h1
 			padding 2rem 0
 			font-size 3em
+			font-weight bold
 			color black	
 			
 		.technologies
@@ -90,7 +104,7 @@ a
 
 		.data
 			color black
-			white-space pre-wrap
+			white-space normal
 			font-family Noto Serif
 			font-size 1.3em	
 			

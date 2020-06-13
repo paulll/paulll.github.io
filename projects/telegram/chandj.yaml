@@ -8,7 +8,7 @@ i18n:
   ru:
     name: '@chandjbot'
     short: Бот для организации музыкальной библиотеки в телеге 
-    description: >
+    description: |
       Создаешь приватный канал, добавляешь туда бота админом
       и постишь в канал музыку. Бот приведет треки к 
       нормальному виду. Он умеет: <br>
@@ -21,7 +21,7 @@ i18n:
   en:
     name: '@chandjbot'
     short: Telegram bot to organize your music library
-    description: >
+    description: |
       Just create a new private telegram channel, add that 
       bot as an administrator and send some music to the 
       channel. Tht bot can:

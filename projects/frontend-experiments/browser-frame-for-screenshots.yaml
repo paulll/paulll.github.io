@@ -8,21 +8,17 @@ i18n:
   ru:
     name: Рамка окна
     short: Просто рамка окна приложения
-    description: >
+    description: |
       Оформление окна приложения.
       Сделал ради одного красивого скришнота:
 
-      <br>
-      <img src="https://sun9-12.userapi.com/c624416/v624416766/2ab5a/v93_UGJJVzA.jpg"></img><br>
-      <i>Тот самый скришнот</i><br><br>
+      ![Тот самый скришнот](https://sun9-12.userapi.com/c624416/v624416766/2ab5a/v93_UGJJVzA.jpg)
 
       Интересно почему я не сверстал такое для Cloudx..?
   en:
     name: Window Frame
     short: Just a window frame
-    description: >
+    description: |
       Application window frame UI. Made just for one screenshot:
 
-      <br>
-      <img src="https://sun9-12.userapi.com/c624416/v624416766/2ab5a/v93_UGJJVzA.jpg"></img><br>
-      <i>That screenshot</i><br><br>
+      ![That one screenshot](https://sun9-12.userapi.com/c624416/v624416766/2ab5a/v93_UGJJVzA.jpg)

@@ -8,7 +8,7 @@ i18n:
   ru:
     name: xnul
     short: Необычные крестики-нолики
-    description: >
+    description: |
       Эксперимент с тем, что выйдет, если в крестиках-ноликах (5-в-ряд)
       было бы 3 игрока. Довольно просто "выйграть" за свою сторону, но
       вот квест: как, к примеру, сделать чтобы именно красные построили 5 в ряд?
@@ -17,7 +17,7 @@ i18n:
   en:
     name: xnul
     short: Weird tic-tac-toe
-    description: >
+    description: |
       Experiment with five-in-a-row game. What happens if there are 3 players?
       Quite easy to win with the default rules, so here is the quest: 
       how to make the reds build 5 in a row?

@@ -8,7 +8,7 @@ i18n:
   ru:
     name: Без таймеров (сервис)
     short: сохраняет самоуничтожающиеся фото
-    description: >
+    description: |
       В обычном чате телеграма можно отправить фото с таймером. Оно сгорит
       через заданное время после прочтения, и его невозможно заскринить. 
 
@@ -22,7 +22,7 @@ i18n:
   en:
     name: No TTL serivce
     short: saves self-destructing media
-    description: >
+    description: |
       You can send self-destructing photo in basic Telegram chats (even not private/encryped ones)
 
       This service receives your incoming messages and if it see any
