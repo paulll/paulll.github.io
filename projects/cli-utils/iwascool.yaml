@@ -1,17 +1,21 @@
-deployment: https://
-source: https://github.com/paulll/
-license: 
-technologies: []
-tags: []
-awesomeness: 0
+deployment:
+source: 
+license: Private
+technologies: [bash, git]
+tags: [done, private]
+awesomeness: 1
 i18n:
   ru:
-    name: 
-    short: 
-    description: >
-      
+    name: iwascool
+    short: Консольная утилита которая помогает мне копаться в своих же старых проектах. 
+    description: |
+      Консольная утилита которая помогает мне копаться в своих же старых проектах. 
+      Определяет дату создания проекта и инициализирует репозиторий задним числом,
+      (<code>git commit --date ...</code>) 
   en:
-    name: 
-    short: 
-    description: >
-      
+    name: iwascool
+    short: Command-line utility that helps me inspecting my very old projects.
+    description: |
+      Command-line utility that helps me inspecting my old projects.
+      Basically, determines project creation time, then initializes 
+      a git repo with that date.
