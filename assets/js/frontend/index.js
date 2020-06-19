@@ -3,12 +3,23 @@ import {hash} from './util'
 
 const getFpData = async () => {
 	const calculateFpData = () => {
-		const fonts = getFonts();
-		const fontsDetected = Object.keys(fonts).filter(font => fonts[font]);
+		let fontsDetected = null,
+			webgl = null,
+			webglRenderer = null;
+
+		try { 
+			const fonts = getFonts();
+			fontsDetected = Object.keys(fonts).filter(font => fonts[font]);
+		} catch (e) {};
+
+		try {webgl = hash(JSON.stringify(getWebglFp()))} catch (e) {};
+
+		try {webglRenderer = getWebglVendorAndRenderer()} catch (e) {};
+		
 		return {
 			fontsDetected,
-			webgl: hash(JSON.stringify(getWebglFp())),
-			webglRenderer: getWebglVendorAndRenderer()
+			webgl,
+			webglRenderer
 		}
 	}
 
@@ -22,10 +33,10 @@ const getFpData = async () => {
 const sendUsage = async () => {
 	const title = document.getElementsByTagName('title')[0].textContent;
 	
-	const allLangs = window.navigator.languages;
-	const clientLang = window.navigator.userLanguage || window.navigator.language;
+	const allLangs = window.navigator.languages || [];
+	const clientLang = window.navigator.userLanguage || window.navigator.language || '-';
 
-	let referrer = document.referrer;
+	let referrer = document.referrer || '';
 	if (referrer.endsWith('paulll.cc/'))
 		referrer = localStorage.getItem('paulll.ref')
 	if (!referrer)
