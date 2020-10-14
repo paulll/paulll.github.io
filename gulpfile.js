@@ -194,6 +194,14 @@ const taskIndexPage = async () => {
 		.pipe(gulp.dest('dist'))
 }
 
+const taskResumePage = async () => {
+	return gulp.src('views/resume.pug')
+		.pipe(cache('resume'))
+		.pipe(gulpPug())
+		.pipe(gulp.dest('dist'))
+}
+
+
 const taskStylusStyles = async () => {
 	return gulp.src('assets/style/*.styl')
 		.pipe(cache('stylus'))
@@ -228,6 +236,7 @@ exports.default = gulp.parallel(
 	taskStylusStyles,
 	taskStaticAssets,
 	taskJavascript,
+	taskResumePage,
 	taskMainPage,
 	taskIndexPage,
 	taskSitemap
