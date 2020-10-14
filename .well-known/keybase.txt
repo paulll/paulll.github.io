@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/paulll
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://paulll.cc
+  * I am paulll (https://keybase.io/paulll) on keybase.
+  * I have a public key with fingerprint 8175 24E0 F819 D4D1 D720  95B2 7F8B 4FAF 3060 83AF
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101fee6c0b192690652d025cbf723c2a98f9b2a09809520b350973eeb2c45a12bc20a",
+      "fingerprint": "817524e0f819d4d1d72095b27f8b4faf306083af",
+      "host": "keybase.io",
+      "key_id": "7f8b4faf306083af",
+      "kid": "0101fee6c0b192690652d025cbf723c2a98f9b2a09809520b350973eeb2c45a12bc20a",
+      "uid": "6c306fae471e4db4088bf801f9d99b19",
+      "username": "paulll"
+    },
+    "merkle_root": {
+      "ctime": 1589727400,
+      "hash_meta": "bcf30d8442934feb2c5a8216b1d9f22deb7ac2826f75d9ea9618b1096b164ddd",
+      "seqno": 16324635
+    },
+    "revoke": {
+      "sig_ids": [
+        "852d763dc1ee802b582a0e8c8e4d334207b9c2974ed940e0ee9d8f5abc8472fa0f"
+      ]
+    },
+    "service": {
+      "hostname": "paulll.cc",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1589727411,
+  "expire_in": 157680000,
+  "prev": "e8518fc2c1f935588928b9f6aa235d3c84a969e06af0716d69373ac4322e14a1",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMKyAnicrVNbaB1FGD6pGkxCi63UahCRjVDQNMzMzuzOhERbS0GslxDR3ns6l3+S
+7Tk5e9zdHBNjGh+kYqBesIJQerEXLDWIEtpoSG0soQhCWgQFnwxYREKFgqJtbdXZ
+oKDio0/DDN//3WZmZvFNhca6rw7MXjp38tzlus/PJv2F7Z92jQ95KjaDXvuQV4KF
+BcoG0qxYiozX7iGMsAUINFJYkECggBGDCNPKhsTXRApuhSISCY4EI0j5DInQB1BE
+UyYxUZog6bV6Nqr0QFJNokrmaDkOGaGALMfCUINNSNy4IqHlilppfRQg7kvrBnvj
+NJ9w5pRMoS2K3ZnbFBfs/Qf+f/bdv0AXaKdgJdAQAzWKIs6V5U5CGCGcQg5MIanI
+PnDoquwvl8vecKvXB0mpDMUkjrO8Wp1FOQAzLkISUoRcPJn2Fvsgk25OaRfEcEqJ
+8KnNrTDJCQ4UNsISYkCFUhNOAhsyI0CKAHOFkXCAgBpjnIsUnq3ETiHwCQ185iwk
+UItLkKunUY9rLfXat3jctREGvtEYgCOiGHdVANfcpfN9SlCohCYipGAERYAAhOGW
+SaU5DYmVyHrbhnO1pBbpBfL8mv4Rv01r56eaxFms47I77s2yatqet5INVnPcc6CK
+fzIUVVQx7oW4iRokaRRXXAaH/FdhGLd6MFCNEihGOYKFAUcor7HqYjpK4Axzq4l2
+N+MzxrkgXAkbSEl8Znzn3pUmAAXSohAHJhB+6EtNfUIAU4n/1iB3PmWP43S1VWTW
+n4A3fHZ6682FusZC/S2L8q9TaGy47a8PtefhWwv7Rsaghzwxfr225FLT46Pv/3wy
+suuX9e7aRDof2rv2xe9+nZ++893X7loXpGufWX/HjurAlrB+d+fc3Bsb+xatuvDo
+MGq+evyQGry3NDrazV+YvLr8dvveus3JdG311xen2KZPrrzedV+taemZGx/df/eF
+3Y/M31jpz+47umTN5N5dtf3x+WunJ3785cT2a+c//OzwTxu7dx7uoN/uWV6aaGnY
+8PL3wequnsknF893/jbx4IaxiQNPnXqnedWZlpmnP5jefM/49RX74YuXrhS6Jw8e
+aWp4c+Toq2//vmN0ho21Hc+ahzoe27nth2jN6SNLp+ovzn48cmprcUXHl1Ozzx9r
+OfZNZe6tQwcfeGXl5YGBPwD6M4Jz
+=dIi5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/paulll
+
+==================================================================

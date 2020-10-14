@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="ru" prefix="og: http://ogp.me/ns#"><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="/style/projects.css"><link rel="stylesheet" href="/style/github-gist.css"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet"><script async src="/js/frontend.js"></script><script async src="/js/link-prerender.js"></script><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#b91d47"><meta name="theme-color" content="#ffffff"><meta name="description" property="og:description" content="Проверка на утечку в Вконтакте"><meta property="og:title" content="@ffdbcheckbot"><meta property="og:url" content="https://paulll.cc/ru/security/findface-check-bot.html"><meta property="og:type" content="article"><meta property="og:image" content="https://paulll.cc/ogp-splash.webp"><meta property="og:image" content="https://paulll.cc/ogp-splash.png"><meta property="article:section" content="CTF и ИБ"><meta property="article:author" content="https://paulll.cc"><meta property="article:tag" content="node"><meta property="article:tag" content="mongodb"><meta property="article:tag" content="telegram"><meta property="article:tag" content="pwn"><title>@ffdbcheckbot — paulll</title><meta name="robots" content="noindex, nofollow, nosnippet"></head><body><div class="content"><div class="block"><h1>@ffdbcheckbot</h1><div class="technologies"><div class="icon">#</div><div class="items"><div class="technology">node</div><div class="technology">mongodb</div><div class="technology">telegram</div><div class="technology">pwn</div></div></div><div class="data"><h4>Только не пускайте слюни, всё это уже не актуально</h4>
+<p>Бот, который проверял наличие человека или его друзей в утечке какого-то там Контакта,
+и выдавал access_token’ы нашедшихся. К слову, это <strong>960 тысяч</strong> юзеров вконтакте,
+из которых более к <strong>300 тысячам</strong> был доступ, причем практически все - активные
+настоящие пользователи со старыми страницами, много всяких медийных. Полагаю, это по масштабу
+сойдет за крупнейший <s>взлом</s> загрузку открытых данных.</p>
+<p>Откуда у меня такая утечка? Ну, это длинная история. Но они просто лежали в открытом
+виде, так что вряд ли тут что-то криминальное. Тем более копию тех данных
+я никуда не отправлял, а бота использовал только сам. Да и вообще это был не я, и
+это все выдумка, а любые совпадения с реальным миром - случайность. Отстаньте</p>
+<br>
+<center><img src="https://habrastorage.org/webt/9u/c_/nu/9uc_nuxyomteuuhkyerf_5-ws38.png" /></center>
+<center><i>Тот самый бот</i></center><br><br>
+<p>Обозначения бота:<br>
+<strong>[full]</strong> - полный доступ к странице, в т.ч. к сообщениям <br>
+<strong>[basic]</strong> - сокращенный доступ (фото) <br>
+<strong>[none]</strong> - доступ был раньше, но утерян <br>
+<br></p>
+<p>Токен выдавался кликабельной строчкой, и копировался в буфер обмена при нажатии. Затем
+его можно было использовать в <a href="https://a47.me/apidog/apidag/index.html">пропатченном apidog</a></p>
+<p>Кстати, да. Вконтакте спустя год таки аннулировал те токены, пусть они и были с неограниченным сроком
+действия. Про утечку админы знали с самого начала, просто то были не Вконтакте, а их партнеры, и,
+видимо, постеснялись признаться об этом Вконтакте незамедлительно. Особенно учитывая что у партнеров
+таких данных тоже не должно было быть, ситуация была неоднозначная.</p>
+<p>Я бы был бы сейчас очень богат, если бы где-нибудь это бы сбагрил, хех.</p>
+<p><i>P.S. Только не надо публикаций об этом, хорошо? Я хотел бы избежать шумихи</i></p>
+</div><div class="links-wrap"><div class="links"><a class="icon repo" href="https://github.com/paulll/"></a><div class="icon private"></div></div></div></div><div id="footer"></div></div></body></html>
