@@ -28,7 +28,7 @@
     "highlight.js": "^10.1.0",
     "markdown-it": "^11.0.0",
     "markdown-it-implicit-figures": "^0.10.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "rollup": "^2.10.9",
     "simple-git": "^2.5.0",
     "sitemap": "^6.1.5",
