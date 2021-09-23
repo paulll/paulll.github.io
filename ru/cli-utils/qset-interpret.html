@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="ru" prefix="og: http://ogp.me/ns#"><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="/style/projects.css"><link rel="stylesheet" href="/style/github-gist.css"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet"><script async src="/js/frontend.js"></script><script async src="/js/link-prerender.js"></script><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#b91d47"><meta name="theme-color" content="#ffffff"><meta name="description" property="og:description" content="Интерпретатор эзотерического языка программирования из таска на ABCTF-2016."><meta property="og:title" content="Интерпретатор QSet"><meta property="og:url" content="https://paulll.cc/ru/cli-utils/qset-interpret.html"><meta property="og:type" content="article"><meta property="og:image" content="https://paulll.cc/ogp-splash.webp"><meta property="og:image" content="https://paulll.cc/ogp-splash.png"><meta property="article:section" content="Консольные Утилиты"><meta property="article:author" content="https://paulll.cc"><meta property="article:tag" content="c++"><meta property="article:tag" content="qset"><meta property="article:tag" content="esolang"><meta property="article:tag" content="ctf"><title>Интерпретатор QSet — paulll</title></head><body><div class="content"><div class="block"><h1>Интерпретатор QSet</h1><div class="technologies"><div class="icon">#</div><div class="items"><div class="technology">c++</div><div class="technology">qset</div><div class="technology">esolang</div><div class="technology">ctf</div></div></div><div class="data"><p>QSet - эзотерический язык программирования из таска на ABCTF-2016.
+Программа на нём представляет собой последовательноть пар списков символов.</p>
+<p>Формальный синтаксис:</p>
+<pre><code class="language-abnf"><span class="hljs-attribute">symbol</span> = <span class="hljs-keyword">ALPHA</span>
+<span class="hljs-attribute">multiset</span> = symbol / symbol <span class="hljs-string">&quot; &quot;</span> multiset
+<span class="hljs-attribute">instruction</span> = multiset <span class="hljs-string">&quot;|&quot;</span> multiset
+<span class="hljs-attribute">program</span> = instruction / instruction <span class="hljs-string">&quot;\n&quot;</span> program
+</code></pre>
+<p>Семантика:</p>
+<pre><code class="language-py">multiset&lt;symbol&gt; state = input
+<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+  <span class="hljs-keyword">for</span> (L, R) : (multiset&lt;symbol&gt;, multiset&lt;symbol&gt;) <span class="hljs-keyword">in</span> program:
+    <span class="hljs-keyword">if</span> R ⊆ S:
+      state = state - R + L
+      <span class="hljs-keyword">break</span>
+  <span class="hljs-keyword">if</span> state <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> modified:
+    <span class="hljs-keyword">break</span>
+multiset&lt;symbol&gt; output = state
+</code></pre>
+<p>Вход и выход - конечные последовательности натуральных чисел.
+Символы <code>i0</code>, <code>i1</code> и т.д. содержат входную последовательноть,
+а символы <code>o0</code>, <code>o1</code>, … используются для вывода.</p>
+<h2>Об этом проекте</h2>
+<p>Просто интерптератор для интересного, на мой взгляд, эзотерического языка.
+Сделано just4fun пока мне было нечем заняться на паре. Кстати, этот таск на
+CTF я решил написав оптимизирующий компилятор специального недоязыка в QSet,
+но если я буду еще и райтапы в проектах тут расписывать, сайт просто утонет
+в контенте.</p>
+<h2>Примечания</h2>
+<ul>
+<li><a href="https://github.com/shiltemann/CTF-writeups-public/blob/master/ABCTF-2016/writeupfiles/qset_interpreter.py">Референсный интерпретатор</a></li>
+<li><a href="https://kimiyuki.net/writeup/ctf/2016/abctf-2016/#qset-1---100">Райтап</a></li>
+<li><a href="https://sharpc.livejournal.com/98094.html">Другой райтап</a> (тоже не мой, но на русском)</li>
+</ul>
+</div><div class="links-wrap"><div class="links"><a class="icon repo" href="https://gist.github.com/paulll/0d7b59bd609a2b937e4bd075d7f96217"></a><div class="icon mit"><span>mit</span></div></div></div></div><div id="footer"></div></div></body></html>

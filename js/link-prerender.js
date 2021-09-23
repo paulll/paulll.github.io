@@ -1,0 +1,1 @@
+!function(){"use strict";const e=()=>{Array.from(document.querySelectorAll("a")).forEach(e=>{let t=1;e.addEventListener("mouseenter",()=>{if(e.href&&!--t){const t=document.createElement("link");t.rel="prefetch",t.href=e.href,document.head.appendChild(t)}})})};"loading"!==document.readyState?setTimeout(e,0):document.addEventListener("DOMContentLoaded",e)}();

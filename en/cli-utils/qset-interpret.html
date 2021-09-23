@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="/style/projects.css"><link rel="stylesheet" href="/style/github-gist.css"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet"><script async src="/js/frontend.js"></script><script async src="/js/link-prerender.js"></script><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#b91d47"><meta name="theme-color" content="#ffffff"><meta name="description" property="og:description" content="QSet is an esoteric programming language from the ABCTF-2016 challenge."><meta property="og:title" content="QSet interpreter"><meta property="og:url" content="https://paulll.cc/en/cli-utils/qset-interpret.html"><meta property="og:type" content="article"><meta property="og:image" content="https://paulll.cc/ogp-splash.webp"><meta property="og:image" content="https://paulll.cc/ogp-splash.png"><meta property="article:section" content="CLI Utilities"><meta property="article:author" content="https://paulll.cc"><meta property="article:tag" content="c++"><meta property="article:tag" content="qset"><meta property="article:tag" content="esolang"><meta property="article:tag" content="ctf"><title>QSet interpreter — paulll</title></head><body><div class="content"><div class="block"><h1>QSet interpreter</h1><div class="technologies"><div class="icon">#</div><div class="items"><div class="technology">c++</div><div class="technology">qset</div><div class="technology">esolang</div><div class="technology">ctf</div></div></div><div class="data"><p>QSet is an esoteric programming language from the ABCTF-2016 challenge.
+The program is a sequence of pairs of symbol lists. The syntax is:</p>
+<pre><code class="language-abnf"><span class="hljs-attribute">symbol</span> = <span class="hljs-keyword">ALPHA</span>
+<span class="hljs-attribute">multiset</span> = symbol / symbol <span class="hljs-string">&quot; &quot;</span> multiset
+<span class="hljs-attribute">instruction</span> = multiset <span class="hljs-string">&quot;|&quot;</span> multiset
+<span class="hljs-attribute">program</span> = instruction / instruction <span class="hljs-string">&quot;\n&quot;</span> program
+</code></pre>
+<p>The semantic is like:</p>
+<pre><code class="language-py">multiset&lt;symbol&gt; state = input
+<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+  <span class="hljs-keyword">for</span> (L, R) : (multiset&lt;symbol&gt;, multiset&lt;symbol&gt;) <span class="hljs-keyword">in</span> program:
+    <span class="hljs-keyword">if</span> R ⊆ S:
+      state = state - R + L
+      <span class="hljs-keyword">break</span>
+  <span class="hljs-keyword">if</span> state <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> modified:
+    <span class="hljs-keyword">break</span>
+multiset&lt;symbol&gt; output = state
+</code></pre>
+<p>Both input and output are finite sequences of positive integers.
+Symbols <code>i0</code>, <code>i1</code>, <code>i2</code> and so on are pre-defined with input sequence
+Symbols <code>o0</code>, <code>o1</code> and so on are used for output.</p>
+<h2>About the project itself</h2>
+<p>Just an interpreter for such an interesting language. Made just for fun.
+By the way, I’ve solved that CTF challenge by writing a specific optimizing
+compiler which compiles programs into the QSet code.</p>
+<h2>References</h2>
+<ul>
+<li><a href="https://github.com/shiltemann/CTF-writeups-public/blob/master/ABCTF-2016/writeupfiles/qset_interpreter.py">Reference implementation</a></li>
+<li><a href="https://kimiyuki.net/writeup/ctf/2016/abctf-2016/#qset-1---100">Challenge Writeup</a> (not mine)</li>
+</ul>
+</div><div class="links-wrap"><div class="links"><a class="icon repo" href="https://gist.github.com/paulll/0d7b59bd609a2b937e4bd075d7f96217"></a><div class="icon mit"><span>mit</span></div></div></div></div><div id="footer"></div></div></body></html>

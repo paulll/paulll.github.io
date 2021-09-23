@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="ru" prefix="og: http://ogp.me/ns#"><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="/style/projects.css"><link rel="stylesheet" href="/style/github-gist.css"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet"><script async src="/js/frontend.js"></script><script async src="/js/link-prerender.js"></script><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#b91d47"><meta name="theme-color" content="#ffffff"><meta name="description" property="og:description" content="Внутренний мессенджер на Django, попросили - сделал."><meta property="og:title" content="k732gram"><meta property="og:url" content="https://paulll.cc/ru/web-apps/k732gram.html"><meta property="og:type" content="article"><meta property="og:image" content="https://paulll.cc/ogp-splash.webp"><meta property="og:image" content="https://paulll.cc/ogp-splash.png"><meta property="article:section" content="Веб-Приложения"><meta property="article:author" content="https://paulll.cc"><meta property="article:tag" content="python"><meta property="article:tag" content="django"><meta property="article:tag" content="centrifugo"><meta property="article:tag" content="docker"><meta property="article:tag" content="docker-compose"><meta property="article:tag" content="pug"><meta property="article:tag" content="stylus"><title>k732gram — paulll</title></head><body><div class="content"><div class="block"><h1>k732gram</h1><div class="technologies"><div class="icon">#</div><div class="items"><div class="technology">python</div><div class="technology">django</div><div class="technology">centrifugo</div><div class="technology">docker</div><div class="technology">docker-compose</div><div class="technology">pug</div><div class="technology">stylus</div></div></div><div class="data"><p>Внутренний мессенджер на Django. Из интересных фишек: для сообщения в конференции виден список прочитавших.
+Сделано по запросу, иначе бы я не стал подобное творить на django. Впрочем, довольно неплохо работает благодаря Centrifugo.
+<picture></p>
+  <source srcset="/images/k732gram.webp" type="image/webp">
+  <source srcset="/images/k732gram.jpg" type="image/jpeg">
+  <img src="/images/k732gram.jpg" alt="Интерфейс k732gram">
+</picture>
+<center><i>Интерфейс k732gram</i></center>
+<h4>Как устроено</h4>
+<p>Django сам по себе заточен под запросно-ответную архитектуру, и рассылка сообщений в нее не укладывается.
+Но задача была сделать на Django, для дальнейшей интеграции с другими внутренними сервисами, так что пришлось
+искать выход в виде Centrifugo. Фактически, это pub/sub сервер с поддержкой websocket-соединений, контролем
+доступа к топикам по JWT-токенам и простым api. В принципе, там куда больше фишек, но я перечислил именно
+задейстованные в данном конкретном случае.</p>
+<picture>
+  <source srcset="/images/centrifugo.webp" type="image/webp">
+  <source srcset="/images/centrifugo.png" type="image/png">
+  <img src="/images/centrifugo.png" alt="Схема рассылки мгновенных сообщений">
+</picture>
+<center><i>Схема рассылки мгновенных сообщений</i></center>
+<p>При заходе пользователя в чат, сервер проверяет его права, и при наличии таковых выдает ему JWT-токен с
+правами на подписку на соответствующий чату pub/sub топик. При поступлении сообщения от пользователя,
+бэкэнд сохраняет его в базу данных и отправляет событие нового сообщения на сервер Centrifugo, который
+затем рассылает его всем подписанным клиентам.</p>
+</div><div class="links-wrap"><div class="links"><a class="icon repo" href="https://github.com/paulll/k732gram"></a><div class="icon mit"><span>mit</span></div></div></div></div><div id="footer"></div></div></body></html>
