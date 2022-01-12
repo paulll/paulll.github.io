@@ -26,7 +26,7 @@
     "gulp-stylus": "^2.7.0",
     "gulp-terser": "^1.2.0",
     "highlight.js": "^10.1.0",
-    "markdown-it": "^11.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-implicit-figures": "^0.10.0",
     "pug": "^2.0.4",
     "rollup": "^2.10.9",
